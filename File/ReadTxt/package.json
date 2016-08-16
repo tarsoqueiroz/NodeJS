@@ -1,0 +1,21 @@
+{
+  "name": "readtxt",
+  "version": "1.0.0",
+  "description": "Test of ReadLine module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "ReadLine",
+    "Module",
+    "Read",
+    "File"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
+}
