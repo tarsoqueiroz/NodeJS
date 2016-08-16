@@ -1,0 +1,21 @@
+{
+  "name": "httpserver",
+  "version": "1.0.0",
+  "description": "Simple HTTP Servers for test",
+  "main": "http01.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "HTTP",
+    "Server",
+    "Web"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "http": "0.0.0"
+  }
+}
