@@ -1,0 +1,19 @@
+{
+  "name": "nedb.nosql",
+  "version": "1.0.0",
+  "description": "Test of NeDB NoSQL Database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "NeDB",
+    "NoSQL"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "nedb": "^1.8.0"
+  }
+}

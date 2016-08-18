@@ -30,8 +30,9 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(function (request, response, next) {
   console.log("======>>> Middleware for sample - START <<<======");
-  console.log("*** Request Headers ***\n", request.headers);
   console.log("*** URL requested ***\n", request.url);
+  console.log("*** Request Headers ***\n", request.headers);
+  console.log("*** Request Body ***\n", request.body);
   console.log("======>>> Middleware for sample - END <<<======");
   next();
 });
