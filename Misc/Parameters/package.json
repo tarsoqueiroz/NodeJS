@@ -1,0 +1,21 @@
+{
+  "name": "parameters",
+  "version": "1.0.0",
+  "description": "Parsing command line arguments",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Command",
+    "Line",
+    "Arguments",
+    "Parameters"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
