@@ -1,0 +1,17 @@
+{
+  "name": "authbasic",
+  "version": "1.0.0",
+  "description": "HTTP basic authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "HTTP",
+    "Basic",
+    "Authentication"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT"
+}
