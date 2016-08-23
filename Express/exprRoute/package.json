@@ -1,0 +1,19 @@
+{
+  "name": "exprroute",
+  "version": "1.0.0",
+  "description": "How to function the routing in Node and Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "Route"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
