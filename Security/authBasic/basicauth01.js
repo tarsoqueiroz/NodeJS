@@ -17,18 +17,26 @@
 const nPort    = 3333;
 const http     = require('http');
 const username = 'authuser';
-const password = 'basicpasswd1';
+const password = 'basicpasswd';
 const realm    = 'TarsoQueiroz';
+
+function authenticateResponse(res) {
+  res.writeHead(401, {'WWW-Authenticate' : 'Basic realm="' + realm + '"'});
+  res.end('Authorization required');
+  console.log('Response Header:', res._header);
+  console.log('*** REQUESTED LOGIN');
+}
 
 http.createServer(function (req, res) {
   var auth, login;
 
-  console.log('-------------------');
+  console.log('\n-------------------');
   if(!req.headers.authorization) {
     console.log('*** WITHOUT AUTHORIZATION HEADER');
     authenticateResponse(res);
     return;
   }
+
   console.log('Header authorization  :', req.headers.authorization);
   auth = req.headers.authorization.replace(/^Basic /, '');
   console.log('Authorization coded   :', auth);
@@ -39,7 +47,7 @@ http.createServer(function (req, res) {
 
   if(login[0] === username && login[1] === password) {
     res.end("Login Successful");
-    console.log('*** LOGIN SUCCESSFULLY');
+    console.log('*** LOGIN SUCCESSFULLY\n');
     return;
   }
   console.log('*** USER:PASS ERROR');
@@ -47,8 +55,4 @@ http.createServer(function (req, res) {
   console.log('-------------------');
 }).listen(nPort);
 
-function authenticateResponse(res) {
-  res.writeHead(401, {'WWW-Authenticate' : 'Basic realm="' + realm + '"'});
-  res.end('Authorization required');
-  console.log('*** REQUESTED LOGIN');
-}
+console.log('Listening on port', nPort);
