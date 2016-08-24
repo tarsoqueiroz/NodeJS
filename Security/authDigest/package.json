@@ -1,0 +1,21 @@
+{
+  "name": "authdigest",
+  "version": "1.0.0",
+  "description": "Simple test of HTTP digest authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "HTTP",
+    "Authentication",
+    "Digest"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "0.0.3",
+    "http": "0.0.0"
+  }
+}
