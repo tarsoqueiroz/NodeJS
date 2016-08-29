@@ -1,0 +1,20 @@
+{
+  "name": "optionsblackscholes",
+  "version": "1.0.0",
+  "description": "Calculating stock options with Black-Scholes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Finance",
+    "Black",
+    "Scholes"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "black-scholes": "^1.1.0"
+  }
+}
