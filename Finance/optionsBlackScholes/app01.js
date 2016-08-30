@@ -33,11 +33,11 @@ console.log('put  (3.5651039155492974)  :', nPut);
 console.log('Calc 02');
 nCall = bs.blackScholes(12.81, 13, (21/365), 0.4141, .1425, "call"); // 0.23834902311961947
 nPut  = bs.blackScholes(12.81, 13, (21/365), 0.4141, .1425, "put");  // 3.5651039155492974
-console.log('call (0.23834902311961947) :', nCall);
-console.log('put  (3.5651039155492974)  :', nPut);
+console.log('call (0.46822936305387586) :', nCall);
+console.log('put  (0.5520828936691498)  :', nPut);
 
 console.log('Calc 03');
-nCall = bs.blackScholes(12.82, 13, (21/365), 0.4141, .1425, "call"); // 0.23834902311961947
-nPut  = bs.blackScholes(12.82, 13, 0.0575,   0.4141, .1425, "put");  // 3.5651039155492974
-console.log('call (0.23834902311961947) :', nCall);
-console.log('put  (3.5651039155492974)  :', nPut);
+nCall = bs.blackScholes(12.87, 13, (20/365), 0.4141, .1425, "call"); // 0.23834902311961947
+nPut  = bs.blackScholes(12.87, 13, (20/365), 0.4141, .1425, "put");  // 3.5651039155492974
+console.log('call (0.4837464921878265)  :', nCall);
+console.log('put  (0.5126349072970466)  :', nPut);

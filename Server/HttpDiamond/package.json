@@ -1,0 +1,19 @@
+{
+  "name": "httpdiamond",
+  "version": "1.0.0",
+  "description": "Minimalistic web framework for Node.js is Express inspired framework, made for learning purposes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "DiamondJS",
+    "framework"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "diamondjs": "^0.1.1"
+  }
+}

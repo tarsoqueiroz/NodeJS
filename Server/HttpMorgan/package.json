@@ -1,0 +1,21 @@
+{
+  "name": "httpmorgan",
+  "version": "1.0.0",
+  "description": "Test of Morgan module for HTTP log",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "HTTP",
+    "Log",
+    "Morgan"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
+}
