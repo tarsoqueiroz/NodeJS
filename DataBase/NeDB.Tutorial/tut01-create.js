@@ -17,14 +17,14 @@ var Datastore = require('nedb');
 var dbInMemory = new Datastore();
 
 // Type 2: Persistent datastore with manual loading
-var dbPersistentManLoad = new Datastore({ filename: './persistentManLoad.nedb.local' });
+var dbPersistentManLoad = new Datastore({ filename: './persistentManLoad.nedb.tqLocal' });
 
 dbPersistentManLoad.loadDatabase(function (err) {    // Callback is optional
   // Now commands will be executed
 });
 
 // Type 3: Persistent datastore with automatic loading
-var dbPersistentAutLoad = new Datastore({ filename: './persistentAutLoad.nedb.local', autoload: true });
+var dbPersistentAutLoad = new Datastore({ filename: './persistentAutLoad.nedb.tqLocal', autoload: true });
 // You can issue commands right away
 
 /**
@@ -39,9 +39,9 @@ var Datastore = require('nedb')
 // Of course you can create multiple datastores if you need several
 // collections. In this case it's usually a good idea to use autoload for all collections.
 var dbCollections = {};
-dbCollections.users  = new Datastore('./multiDataStoreUsers.nedb.local');
-dbCollections.robots = new Datastore('./multiDataStoreRobots.nedb.local');
-dbCollections.things = new Datastore({ filename: './multiDataStoreThings.nedb.local', autoload: true });
+dbCollections.users  = new Datastore('./multiDataStoreUsers.nedb.tqLocal');
+dbCollections.robots = new Datastore('./multiDataStoreRobots.nedb.tqLocal');
+dbCollections.things = new Datastore({ filename: './multiDataStoreThings.nedb.tqLocal', autoload: true });
 
 // You need to load each database (here we do it asynchronously)
 dbCollections.users.loadDatabase();

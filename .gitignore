@@ -40,4 +40,4 @@ jspm_packages
 .idea
 
 # TARSO - Local NeDB files
-.nedb_local
+*.nedb.tqLocal
