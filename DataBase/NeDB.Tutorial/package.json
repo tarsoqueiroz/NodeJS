@@ -1,0 +1,19 @@
+{
+  "name": "nedbtutorial",
+  "version": "1.0.0",
+  "description": "Tutorial and tests from source",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "NeDB",
+    "NoSQL"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "nedb": "^1.8.0"
+  }
+}
