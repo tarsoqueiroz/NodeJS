@@ -1,0 +1,4 @@
+{"nameWorker":"Peter","numberID":1,"dateCreation":{"$$date":1472643670345},"isMale":false,"descriptionPhase":"First pass","_id":"xZM3Y5KzrWWl8RiA"}
+{"nameWorker":"John","numberID":2,"dateCreation":"2016-08-31T11:41:10.345Z","isMale":true,"isFemale":false,"descriptionPhase":"First pass","_id":"f6h0JTBY5sS1rEeO"}
+{"nameWorker":"Mary","numberID":3,"dateCreation":"Wed Aug 31 2016","isMale":false,"isFemale":true,"descriptionPhase":"First pass","_id":"34HKVUDwsAK3ORJx"}
+{"nameWorker":"Amy","numberID":4,"dateCreation":"Wed, 31 Aug 2016 11:41:10 GMT","isMale":false,"isFemale":true,"descriptionPhase":"First pass","_id":"AeItGsmRuPsuZwXk"}
