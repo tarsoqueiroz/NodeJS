@@ -9,11 +9,11 @@
  * Simples routes for test
  */
 
-const express     = require('express');
-const app         = express();
-const root        = require('./route03_root');
-const test        = require('./route03_test');
-const nPort       = 3333;
+const express = require('express');
+const app     = express();
+const root    = require('./route03_root');
+const test    = require('./route03_test');
+const nPort   = process.env.PORT || 3333;
 
 /**
  * Middleware for LOG and Statistics
