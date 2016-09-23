@@ -1,19 +1,17 @@
 {
-  "name": "http2server",
+  "name": "tqoptionsgreek",
   "version": "1.0.0",
-  "description": "Simple test of HTTP2",
+  "description": "Return Greeks Options",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "NodeJS",
-    "HTTP2"
+    "Greek",
+    "Options",
+    "Finance"
   ],
   "author": "Tarso Queiroz",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.14.0",
-    "spdy": "^3.4.0"
-  }
+  "license": "MIT"
 }
