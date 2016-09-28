@@ -1,0 +1,24 @@
+{
+  "name": "scotchio",
+  "version": "1.0.0",
+  "description": "Build a RESTful API Using Node and Express 4 from Scotch.IO website",
+  "source:": "https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "MongoDB",
+    "RESTful",
+    "API"
+  ],
+  "author": "From Scotch.IO website",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.1"
+  }
+}

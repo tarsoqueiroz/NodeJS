@@ -2,6 +2,7 @@
   "name": "fromscratch",
   "version": "1.0.0",
   "description": "Simple RESTful API from scratch",
+  "source": "https://www.youtube.com/watch?v=eB9Fq9I5ocs",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
