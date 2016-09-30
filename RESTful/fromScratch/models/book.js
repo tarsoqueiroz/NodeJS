@@ -36,8 +36,8 @@ var bookSchema = mongoose.Schema({
     type: String
   },
   create_date: {
-    type: Date,
-    default: Date.now()
+    type: String,
+    default: Date().now
   }
 });
 
