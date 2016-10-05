@@ -1,0 +1,19 @@
+{
+  "name": "mqttserver",
+  "version": "1.0.0",
+  "description": "Test of MosQuiTTo: an MQTT server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "MQTT",
+    "MosQuiTTo"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^2.0.1"
+  }
+}
