@@ -4,10 +4,14 @@
  * By         NAME: async01.js.
  */
 
-console.log('Hi');
+console.log('First written record');
 
 setTimeout(function cb() {
-  console.log('there');
-}, 3000);
+  console.log('Second written record');
+}, 2000);
 
-console.log('folks');
+setTimeout(function () {
+  console.log('Third written record');
+}, 1000);
+
+console.log('Fourth written record');

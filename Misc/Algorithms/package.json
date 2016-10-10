@@ -11,5 +11,9 @@
     "Algorithms"
   ],
   "author": "Tarso Queiroz",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.0.1",
+    "cluster": "^0.7.7"
+  }
 }
