@@ -41,3 +41,4 @@ jspm_packages
 
 # TARSO - Local NeDB files
 *.nedb.tqLocal
+*.NoGitable
