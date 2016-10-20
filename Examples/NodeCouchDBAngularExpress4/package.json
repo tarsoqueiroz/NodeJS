@@ -1,0 +1,26 @@
+{
+  "name": "ncae4",
+  "version": "1.0.0",
+  "description": "Node, CouchDB, Angular and Express 4 sample",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "CouchDB",
+    "Angular",
+    "Express",
+    "Express4"
+  ],
+  "author": "Abhishek Pachal",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cradle": "^0.7.1",
+    "errorhandler": "^1.4.3",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6",
+    "path": "^0.12.7"
+  }
+}
