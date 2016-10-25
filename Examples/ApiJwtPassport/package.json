@@ -1,0 +1,24 @@
+{
+  "name": "apijwtpassport",
+  "version": "1.0.0",
+  "description": "API to authenticate users with JWT and Passport",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "API",
+    "JWT",
+    "Passport"
+  ],
+  "author": "From Tableless",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jwt-simple": "^0.5.0",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.1.0"
+  }
+}
