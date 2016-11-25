@@ -1,0 +1,19 @@
+{
+  "name": "requesthttp",
+  "version": "1.0.0",
+  "description": "Simple test of HTTP request",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "HTTP",
+    "request"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.79.0"
+  }
+}
