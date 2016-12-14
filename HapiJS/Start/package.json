@@ -1,0 +1,20 @@
+{
+  "name": "hapistart",
+  "version": "1.0.0",
+  "description": "Simple test of Hapi framework",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Hapi",
+    "Framework"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^16.0.1",
+    "inert": "^4.0.3"
+  }
+}
