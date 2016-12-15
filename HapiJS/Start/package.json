@@ -14,6 +14,9 @@
   "author": "Tarso Queiroz",
   "license": "MIT",
   "dependencies": {
+    "good": "^7.1.0",
+    "good-console": "^6.2.0",
+    "good-squeeze": "^5.0.1",
     "hapi": "^16.0.1",
     "inert": "^4.0.3"
   }
