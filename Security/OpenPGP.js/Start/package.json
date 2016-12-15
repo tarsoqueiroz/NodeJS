@@ -1,0 +1,19 @@
+{
+  "name": "opgpstart",
+  "version": "1.0.0",
+  "description": "Testing OpenPGP.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "OpenPGPJS",
+    "Security"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "openpgp": "^2.3.5"
+  }
+}
