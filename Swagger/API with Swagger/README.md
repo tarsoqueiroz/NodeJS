@@ -34,5 +34,12 @@ swagger project start <project name>
 
 * Editing a project
 
+To start Swagger Editor go into project directory and ...
+
 ```
-swagger project edit 
+swagger project edit
+```
+
+Point abrowser to: http://127.0.0.1:43101/#/edit and do not terminate the process or 
+close the window until finished editing.
+
