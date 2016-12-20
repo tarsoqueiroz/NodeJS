@@ -1,0 +1,19 @@
+{
+  "name": "hapirouting",
+  "version": "1.0.0",
+  "description": "Test of route capability of Hapi framework",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "HapiJS",
+    "Route"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^16.0.2"
+  }
+}
