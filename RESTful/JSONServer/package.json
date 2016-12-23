@@ -1,0 +1,22 @@
+{
+  "name": "fakerest",
+  "version": "1.0.0",
+  "description": "Fake REST API server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "JSONRest",
+    "REST",
+    "API"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "faker": "^3.1.0",
+    "json-server": "^0.9.4",
+    "lodash": "^4.17.2"
+  }
+}
