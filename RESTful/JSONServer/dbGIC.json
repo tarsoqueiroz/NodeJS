@@ -1,0 +1,32 @@
+{
+  "funcionario": [
+    {
+      "id": 1,
+      "nome": "Marcos",
+      "sobrenome": "Lanza",
+      "email": "lanza@pr.gov.br",
+      "lotacao": "GIC COTAP"
+    },
+    {
+      "id": 2,
+      "nome": "Cristina",
+      "sobrenome": "Filipak",
+      "email": "cris@filipak.com",
+      "lotacao": "GIC"
+    },
+    {
+      "id": 3,
+      "nome": "Ricardo",
+      "sobrenome": "Ikematu",
+      "email": "ikematu@yahoo.com",
+      "lotacao": "GIC"
+    },
+    {
+      "id": 4,
+      "nome": "Tarso",
+      "sobrenome": "Queiroz",
+      "email": "tarso@gmail.com",
+      "lotacao": "GIC COTAP"
+    }
+  ]
+}
