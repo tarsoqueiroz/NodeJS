@@ -1,0 +1,24 @@
+{
+  "name": "serievue",
+  "version": "1.0.0",
+  "description": "Exercicios dos videos da série Vue.js originalmente publicada no Vedcasts.com.br.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "VueJS",
+    "Tutorial",
+    "Vedcasts.com.br"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "vue": "^2.1.7",
+    "vue-resource": "^1.0.3"
+  }
+}
