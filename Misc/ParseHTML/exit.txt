@@ -1,0 +1,133 @@
+Hello worldHello motherfucker worldHello everybody world
+
+initialize {
+  options: 
+   { withDomLvl1: true,
+     normalizeWhitespace: false,
+     xmlMode: false,
+     decodeEntities: true },
+  _root: 
+   initialize {
+     '0': 
+      { type: 'tag',
+        name: 'h2',
+        attribs: [Object],
+        children: [Object],
+        next: [Object],
+        prev: null,
+        parent: null,
+        root: [Object] },
+     options: 
+      { withDomLvl1: true,
+        normalizeWhitespace: false,
+        xmlMode: false,
+        decodeEntities: true },
+     length: 1,
+     _root: [Circular] },
+  length: 0,
+  prevObject: 
+   initialize {
+     '0': 
+      { type: 'tag',
+        name: 'h2',
+        attribs: [Object],
+        children: [Object],
+        next: [Object],
+        prev: null,
+        parent: null,
+        root: [Object] },
+     options: 
+      { withDomLvl1: true,
+        normalizeWhitespace: false,
+        xmlMode: false,
+        decodeEntities: true },
+     length: 1,
+     _root: [Circular] } }
+
+initialize {
+  options: 
+   { withDomLvl1: true,
+     normalizeWhitespace: false,
+     xmlMode: false,
+     decodeEntities: true },
+  _root: 
+   initialize {
+     '0': 
+      { type: 'tag',
+        name: 'h2',
+        attribs: [Object],
+        children: [Object],
+        next: [Object],
+        prev: [Object],
+        parent: null,
+        root: [Object] },
+     options: 
+      { withDomLvl1: true,
+        normalizeWhitespace: false,
+        xmlMode: false,
+        decodeEntities: true },
+     length: 1,
+     _root: [Circular] },
+  length: 0,
+  prevObject: 
+   initialize {
+     '0': 
+      { type: 'tag',
+        name: 'h2',
+        attribs: [Object],
+        children: [Object],
+        next: [Object],
+        prev: [Object],
+        parent: null,
+        root: [Object] },
+     options: 
+      { withDomLvl1: true,
+        normalizeWhitespace: false,
+        xmlMode: false,
+        decodeEntities: true },
+     length: 1,
+     _root: [Circular] } }
+
+initialize {
+  options: 
+   { withDomLvl1: true,
+     normalizeWhitespace: false,
+     xmlMode: false,
+     decodeEntities: true },
+  _root: 
+   initialize {
+     '0': 
+      { type: 'tag',
+        name: 'h2',
+        attribs: [Object],
+        children: [Object],
+        next: null,
+        prev: [Object],
+        parent: null,
+        root: [Object] },
+     options: 
+      { withDomLvl1: true,
+        normalizeWhitespace: false,
+        xmlMode: false,
+        decodeEntities: true },
+     length: 1,
+     _root: [Circular] },
+  length: 0,
+  prevObject: 
+   initialize {
+     '0': 
+      { type: 'tag',
+        name: 'h2',
+        attribs: [Object],
+        children: [Object],
+        next: null,
+        prev: [Object],
+        parent: null,
+        root: [Object] },
+     options: 
+      { withDomLvl1: true,
+        normalizeWhitespace: false,
+        xmlMode: false,
+        decodeEntities: true },
+     length: 1,
+     _root: [Circular] } }

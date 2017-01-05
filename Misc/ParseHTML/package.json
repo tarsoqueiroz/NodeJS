@@ -1,0 +1,20 @@
+{
+  "name": "parsehtml",
+  "version": "1.0.0",
+  "description": "Simple parse tests in HTML source",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "HTML",
+    "Parser"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "himalaya": "^0.2.2"
+  }
+}
