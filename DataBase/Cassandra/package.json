@@ -1,0 +1,21 @@
+{
+  "name": "ksandra",
+  "version": "1.0.0",
+  "description": "Simple tests for use of Apache Cassandra in Node.JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Cassandra",
+    "Apache"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "async": "^2.1.4",
+    "cassandra-driver": "^3.1.6"
+  }
+}
