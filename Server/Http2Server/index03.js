@@ -16,11 +16,22 @@ let spdy = require('spdy'),
 
 let options = {
   key: fs.readFileSync(__dirname + '/server.key'),
-  cert: fs.readFileSync(__dirname + '/server.crt')
+  cert:  fs.readFileSync(__dirname + '/server.crt')
 };
 
 spdy.createServer(options, function(req, res) {
-  console.log('ops...');
+  let stream = res
+    .push('/main.js', {
+      request: {
+        accept: '*/\*'
+      },
+      response: {
+        'content-type': 'application/javascript'
+      }
+    })
+    .end('console.log("Hello World in HTTP2");');
+
   res.writeHead(200);
-  res.end('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Hello world</title></head><body><h1>Hello World</h1><p>Over HTTP/2</p></body></html>');
+  res.end('<script src="/main.js"></script>');
 }).listen(port);
+
