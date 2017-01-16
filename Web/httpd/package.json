@@ -4,7 +4,8 @@
   "description": "Simple HTTP server for test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node httpd01.js"
   },
   "keywords": [
     "NodeJS",
@@ -13,5 +14,8 @@
     "Server"
   ],
   "author": "Tarso Queiroz",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
