@@ -1,4 +1,5 @@
 # Source: https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+#         http://staxmanade.com/2016/07/run-multiple-docker-environments--qa--beta--prod--from-the-same-docker-compose-file-/
 FROM node:boron
 
 # Create app directory
