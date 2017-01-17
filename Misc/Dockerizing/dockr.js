@@ -13,7 +13,7 @@
 const express = require('express');
 
 // Constants
-const PORT = 8080;
+const PORT = process.env.HTTPD_PORT || 8080;
 const SERVER_NAME = process.env.HTTPD_SNAME || "Noname Server";
 
 // App
