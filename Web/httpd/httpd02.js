@@ -17,6 +17,7 @@ const SERVER_NAME = process.env.HTTPD_SNAME || "Noname Server";
 const app = express();
 
 app.get('/', function (req, res) {
+  console.log(req.headers);
   res.send(('Hello world from ' + SERVER_NAME + ' at ' + Date() + '\n'));
 });
 
