@@ -11,7 +11,7 @@
 const assert = require('assert');
 
 const cassandra = require('cassandra-driver');
-const client = new cassandra.Client({ contactPoints: ['172.17.0.7', '172.17.0.8'], keyspace: 'demo' });
+const client = new cassandra.Client({ contactPoints: ['172.17.0.4', '172.17.0.5'], keyspace: 'demo' });
 
 const query = 'SELECT * FROM names';
 
