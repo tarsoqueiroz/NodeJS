@@ -1,0 +1,21 @@
+{
+  "name": "bovhistoric",
+  "version": "1.0.0",
+  "description": "Historic from BOVESPA put on NoSQL DB (Cassandra)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Cassandra",
+    "Bovespa"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "cassandra-driver": "^3.2.0",
+    "fs": "0.0.1-security",
+    "readline": "^1.3.0"
+  }
+}
