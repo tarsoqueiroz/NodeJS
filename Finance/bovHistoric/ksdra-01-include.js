@@ -9,10 +9,10 @@
 const fs = require('fs');
 const readline = require('readline');
 const cassandra = require('cassandra-driver');
-const ksdraClient = new cassandra.Client({ contactPoints: ['172.17.0.1', '172.17.0.1'], keyspace: 'bovespa' });
+const ksdraClient = new cassandra.Client({ contactPoints: ['10.15.20.117'], keyspace: 'bovespa' });
 
 var rd = readline.createInterface({
-  input: fs.createReadStream('./COTAHIST_A2016.TXT'),
+  input: fs.createReadStream('./COTAHIST_M092016.TXT'),
   output: process.stdout,
   terminal: false
 });
@@ -23,6 +23,8 @@ var strTipoReg, strData, strCodBDI, strCodNeg, nTpMerc, strNomRes, strEspeci, st
 
 var aParms = [];
 var nRecords = 0;
+
+var bPrintar = true;
 
 const qryInsert = 'INSERT INTO cotacoes (data, codbdi, codneg, tpmerc, nomres, especi, prazot, modref, preabe, premax, \
 premin, premed, preult, preofc, preofv, totneg, quatot, voltot, preexe, indopc, datven, fatcot, \
@@ -74,18 +76,28 @@ rd.on('line', function(strLine) {
 //    ksdraClient.execute(qryInsert, aParms, { prepare: true })
 //      .then(result => console.log(nRecords));
 
-    ksdraClient.execute(qryInsert, aParms, function(err, result) {
-//      assert.ifError(err);
-      console.log(nRecords);
-      console.log(result);
+    ksdraClient.execute(qryInsert, aParms, { prepare: true }, function(err, result) {
+
+      if (err) {
+
+        console.log(err);
+
+      } else if (bPrintar) {
+
+        console.log(result);
+        bPrintar = false;
+
+      }
     });
 
   } else if (strTipoReg === '99') {
+
     console.log('Trailer');
     console.log('  Nome do arquivo   :', strLine.substring( 2, 15));
     console.log('  Codigo da origem  :', strLine.substring(15, 23));
     console.log('  Data de geracao   :', strLine.substring(23, 31));
     console.log('  Total de registros:', parseInt(strLine.substring(31, 42)));
+
   }
 });
 
