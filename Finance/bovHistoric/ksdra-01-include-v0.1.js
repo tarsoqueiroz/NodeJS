@@ -6,8 +6,20 @@
 
 'use strict';
 
+const fs = require('fs');
+const readline = require('readline');
 const cassandra = require('cassandra-driver');
 const ksdraClient = new cassandra.Client({ contactPoints: ['10.15.20.117'], keyspace: 'bovespa' });
+
+var rd = readline.createInterface({
+  input: fs.createReadStream('./COTAHIST_M092016.TXT'),
+  output: process.stdout,
+  terminal: false
+});
+
+var strTipoReg, strData, strCodBDI, strCodNeg, nTpMerc, strNomRes, strEspeci, strPrazoT, strModRef, dPreAbe, dPreMax,
+    dPreMin, dPreMed, dPreUlt, dPreOfC, dPreOfV, nTotNeg, nQuaTot, dVolTot, dPreExe, nIndOpc, strDatVen,
+    iFatCot, dPtoExe, strCodIsi, dDisMes;
 
 var aParms = [];
 var nRecords = 0;
@@ -19,25 +31,8 @@ premin, premed, preult, preofc, preofv, totneg, quatot, voltot, preexe, indopc, 
 ptoexe, codisi, dismes) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, \
 ?, ?, ?)';
 
-var fs = require('fs');
-var filename = 'COTAHIST_M092016.TXT';
-
-var fd = fs.openSync(filename, 'r');
-var bufferSize = 1024;
-var buffer = new Buffer(bufferSize);
-var nCount = 0;
-
-var leftOver = '';
-var strRead, strLine, idxStart, idx, strTipoReg;
-
-while ((strRead = fs.readSync(fd, buffer, 0, bufferSize, null)) !== 0) {
-  leftOver += buffer.toString('utf8', 0, strRead);
-  idxStart = 0;
-  while ((idx = leftOver.indexOf("\n", idxStart)) !== -1) {
-    strLine = leftOver.substring(idxStart, idx);
-    nCount++;
-    console.log(nCount + "one line read: " + strLine.substring(0, 20));
-
+rd
+  .on('line', function(strLine) {
     strTipoReg = strLine.substring(0, 2);
 
     if (strTipoReg === '00') {
@@ -79,6 +74,9 @@ while ((strRead = fs.readSync(fd, buffer, 0, bufferSize, null)) !== 0) {
 
       nRecords++;
 
+  //    ksdraClient.execute(qryInsert, aParms, { prepare: true })
+  //      .then(result => console.log(nRecords));
+
       ksdraClient.execute(qryInsert, aParms, { prepare: true }, function(err, result) {
 
         if (err) {
@@ -102,8 +100,7 @@ while ((strRead = fs.readSync(fd, buffer, 0, bufferSize, null)) !== 0) {
       console.log('  Total de registros:', parseInt(strLine.substring(31, 42)));
 
     }
-
-    idxStart = idx + 1;
-  }
-  leftOver = leftOver.substring(idxStart);
-};
+  })
+  .on('end', function() {
+    rd.close();
+});

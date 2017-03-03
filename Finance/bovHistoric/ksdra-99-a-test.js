@@ -9,7 +9,7 @@
 const cassandra = require('cassandra-driver');
 const client = new cassandra.Client({ contactPoints: ['10.15.20.117'], keyspace: 'bovespa' });
 
-const query = 'SELECT * FROM cotacoes';
+const query = 'SELECT data, codneg, preabe, premax, premin, preult FROM cotacoes';
 
-client.execute(query, [ ])
+client.execute(query, [ ], { prepare: true })
   .then(result => console.log(result));
