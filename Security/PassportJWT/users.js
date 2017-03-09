@@ -23,6 +23,11 @@ var users = [{
   name: "Lucas",
   email: "lucas@uol.com.br",
   password: "lucas123"
+}, {
+  id: 4,
+  name: "Giuliano",
+  email: "giuliano@bol.com.br",
+  password: "giuliano123"
 }];
 
 module.exports = users;
