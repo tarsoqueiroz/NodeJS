@@ -30,10 +30,13 @@ app.get("/", function(req, res) {
   });
 });
 
-app.get("/user", auth.authenticate(), function(req, res) {
-  res.json(users[req.user.id]);
+app.get("/user", auth.authenticate('jwt', cfg.jwtSession), function(req, res) {
+
+  var jwtToken = jwt.decode(req.get('Authorization').split(' ')[1], cfg.jwtSecret);
 
   console.log(req.user);
+  console.log(jwtToken);
+  res.json(users[jwtToken.id]);
 });
 
 app.post("/token", function(req, res) {
@@ -48,6 +51,7 @@ app.post("/token", function(req, res) {
     console.log(email + ' ' + password);
     if (user) {
       var payload = {
+//        id: user.id
         id: user.id,
         name: user.name,
         mail: user.email,
