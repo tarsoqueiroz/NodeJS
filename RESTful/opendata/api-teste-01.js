@@ -47,13 +47,18 @@ app.get("/data", function(req, res) {
   res.set("X-Powered-By", "DA-API Server");
   res.set("Date", dtDate.toISOString());
   res.json({
-    "data": {
-      "status": "234",
-      "X-RateLimit-Limit": "5000",
-      "X-RateLimit-Remaining": "4966",
-      "X-RateLimit-Reset": "1372700873",
-      "tarso": "1967"
-    }
+    "data": [{
+      "id": 1,
+      "name": "Tim Berners-Lee",
+      "age": 61
+    }, {
+      "id": 2,
+      "name": "Ada Lovelace",
+      "age": 36
+    }, {
+      "id": 3,
+      "name": "Roy Fielding"
+    }]
   });
 });
 
