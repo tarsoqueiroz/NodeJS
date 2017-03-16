@@ -36,4 +36,4 @@ var genFake = function () {
   }
 }
 
-console.log(genFake());
+console.log(JSON.stringify(genFake()));
