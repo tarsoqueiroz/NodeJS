@@ -22,18 +22,32 @@ var jsonPeople = JSON.parse('{}');
 app.use(bodyParser.json());
 
 app.get("/", function(req, res) {
+  const dtDate = new Date();
+  var   jsonResponse = {};
+
+  jsonResponse.data = dtDate.toISOString();
+  jsonResponse.status = {'code': 200, 'message': 'DA Sample API is alive!' };
+
   res.set("X-Powered-By", "DA-API Server");
-  res.set("Date", dtDate.toISOString());
-  res.json({
-    "status": "DA Sample API is alive!"
-  });
+  res.json(jsonResponse);
 });
 
-app.get("/people", function (req, res) {
-  res.set("X-Powered-By", "DA-API Server");
-  res.set("Date", dtDate.toISOString());
+app.get("/cities", function (req, res) {
+  const dtDate = new Date();
+  var   jsonResponse = {};
 
-})
+  jsonResponse.date = dtDate.toISOString();
+  jsonResponse.data = [];
+  jsonResponse.status = {'code': 0, 'message': '' };
+  jsonResponse.page = {'this': null, 'next': null};
+
+  res.set("X-Powered-By", "DA-API Server");
+
+  jsonResponse.status.code = 200;
+  jsonResponse.status.message = 'DA-API Cities OK!!!';
+
+  res.json(jsonResponse);
+});
 
 app.listen(PORT, function() {
   console.log('Running "%s" on http://localhost:%d started at %s', SERVER_NAME, PORT, Date());
