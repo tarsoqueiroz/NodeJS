@@ -1,0 +1,15 @@
+{
+  "name": "jsarrays",
+  "version": "1.0.0",
+  "description": "Test of arrays capabilities of Node.JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.js",
+    "Array"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT"
+}
