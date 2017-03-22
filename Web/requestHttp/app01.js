@@ -17,7 +17,7 @@ request('http://www.celepar.pr.gov.br', function (error, response, body) {
 
 
 var options = {
-  uri: 'http://celepar.pr.gov.br' /*,
+  uri: 'http://www.celepar.pr.gov.br' /*,
   auth: {
     user: 'test',
     pass: 'test',
