@@ -1,0 +1,20 @@
+{
+  "name": "rethinktst",
+  "version": "1.0.0",
+  "description": "Test of RethinkDB NoSQL Database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.JS",
+    "RethinkDB",
+    "Database",
+    "NoSQL"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "rethinkdb": "^2.3.3"
+  }
+}
