@@ -1,0 +1,9 @@
+{
+  "user": "Tarso",
+  "userName": "Tarso Dutra Blitzkow de Queiroz",
+  "mail": {
+    "personal": "tarso@gmail.com.br",
+    "profissional": "tarso@empresa.com.br"
+  },
+  "colors": ["black", "white", "grey"]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "configfile",
+  "version": "1.0.0",
+  "description": "Config vars from external file",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Config",
+    "External",
+    "File"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT"
+}
