@@ -1,0 +1,19 @@
+{
+  "name": "xprss4router",
+  "version": "1.0.0",
+  "description": "Learn to Use the New Router in ExpressJS 4.0 from Scotch.io",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "ExpressJS",
+    "Router"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
