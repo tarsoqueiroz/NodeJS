@@ -9,8 +9,9 @@
 const rtkdb = require('rethinkdb');
 var   connrtkdb = null;
 
-rtkdb.connect({host: '10.15.20.117', port: 28015}, function (err, conn) {
+connrtkdb = rtkdb.connect({host: '10.15.20.117', port: 28015}, function (err, conn) {
   if (err) throw err;
-  connrtkdb = conn;
+//  connrtkdb = conn;
 });
 
+console.log(connrtkdb.dbList());
