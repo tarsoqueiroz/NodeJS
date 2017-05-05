@@ -1,7 +1,7 @@
 /**
  * Created by USER: tarso.
- * On         DATE: 25/04/17.
- * By         NAME: rtkdb01a-createdb.
+ * On         DATE: 05/05/17.
+ * By         NAME: rtkdb01b-createdb.
  */
 
 'use strict';
@@ -9,10 +9,14 @@
 const config = require('./rtkdb01.json');
 const rtkdb = require('rethinkdb');
 
-rtkdb.connect({host: config.host, port: config.port})
-  .then(function (conn) {
+var   promisseRtkdb = rtkdb.connect({host: config.host, port: config.port});
+var   connRtkdb = null;
+
+promisseRtkdb.then(function (conn) {
     console.log('Connected to RethingDB...');
-    conn.close(function (error) {
+    connRtkdb = conn;
+
+    connRtkdb.close(function (error) {
       if (error) {
         throw error;
       }
