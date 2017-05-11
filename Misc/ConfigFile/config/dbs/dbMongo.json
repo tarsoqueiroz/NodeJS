@@ -1,0 +1,9 @@
+{
+  "dbserver": "MongoDB",
+  "host": "10.98.76.54",
+  "credentials": {
+    "user": "monguser",
+    "passwd": "passmongo"
+  },
+  "dbs": ["users", "groups", "apps"]
+}

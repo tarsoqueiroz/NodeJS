@@ -13,5 +13,8 @@
     "File"
   ],
   "author": "Tarso Queiroz",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "consign": "^0.1.4"
+  }
 }

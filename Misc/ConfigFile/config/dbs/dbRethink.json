@@ -1,0 +1,9 @@
+{
+  "dbserver": "RethinkDB",
+  "host": "10.11.12.13",
+  "credentials": {
+    "user": "dbuser",
+    "passwd": "dbpasswd"
+  },
+  "dbs": ["users", "groups", "apps"]
+}
