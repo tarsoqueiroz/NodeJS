@@ -1,0 +1,21 @@
+{
+  "name": "xprssvalidator",
+  "version": "1.0.0",
+  "description": "Text of Express-Validator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "Express-Validator"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-validator": "^3.2.0"
+  }
+}
