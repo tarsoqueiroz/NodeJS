@@ -2,6 +2,8 @@
  * Created by USER: tarso.
  * On         DATE: 19/05/17.
  * By         NAME: singleproc.js.
+ *
+ * SOURCE - https://www.infoq.com/br/articles/nodejs-utilizando-modulo-de-cluster
  */
 
 'use strict';
