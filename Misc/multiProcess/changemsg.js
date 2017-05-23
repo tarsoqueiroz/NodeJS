@@ -11,6 +11,8 @@
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length * 2;
 
+console.log(process.env.MESSAGE);
+
 if (cluster.isMaster) {
   // Fork workers
   for (let i = 0; i < numCPUs; i++) {
