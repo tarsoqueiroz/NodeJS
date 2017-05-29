@@ -1,0 +1,21 @@
+{
+  "name": "beerlocker",
+  "version": "1.0.0",
+  "description": "Beer Locker: Building a RESTful API With Node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "RESTful",
+    "API"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.3"
+  }
+}
