@@ -28,4 +28,3 @@ promisseRtkdb.then(function (conn) {
   .error(function (error) {
     throw error;
   });
-
