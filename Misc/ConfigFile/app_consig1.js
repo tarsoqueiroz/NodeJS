@@ -8,12 +8,19 @@
 
 const consign = require('consign');
 var   cfg1a   = {};
+var   cfg1a2  = {};
 var   cfg1b   = {};
 var   cfg2    = {};
 
 consign()
   .include('config/users')
   .into(cfg1a)
+;
+consign()
+  .include('config/users/admin.json')
+  .then   ('config/users/guest.json')
+  .then   ('config/users/user.json')
+  .into(cfg1a2)
 ;
 consign()
   .include('config/dbs')
@@ -27,6 +34,7 @@ consign()
 console.log('==== Users ====');
 console.log('cfg1a                     :', cfg1a);
 console.log('cfg1a.config.users.admin  :', cfg1a.config.users.admin);
+console.log('cfg1a2                    :', cfg1a2);
 
 console.log('==== DBs ====');
 console.log('cfg1b                                     :', cfg1b);
