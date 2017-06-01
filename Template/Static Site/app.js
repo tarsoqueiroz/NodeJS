@@ -8,13 +8,24 @@
 
 'use strict';
 
-const http = require('http');
-const staticSite = require('node-static');
-const fileServer = new staticSite.Server('./public');
+const express = require('express');
+const path = require('path');
+const app = express();
 // Loading configurations
 const settings = require('./config/settings');
 
-http.createServer(function (req, res) {
-  fileServer.serve(req,res);
-}).listen(settings.port, 'localhost');
-console.log('Server running at http://localhost:' + settings.port);
+app.set('port', process.env.PORT || settings.port);
+
+var options = {
+  dotfiles: 'ignore',
+  extensions: ['htm', 'html'],
+  index: false
+};
+
+app.use(express.static(path.join(__dirname, 'public') ,
+  settings.options ));
+
+app.listen(app.get('port'), function () {
+  console.log('Hello express started on http://localhost:' +
+    app.get('port') + '; press Ctrl-C to terminate.' );
+});

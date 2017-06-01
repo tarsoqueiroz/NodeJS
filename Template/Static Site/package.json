@@ -14,5 +14,9 @@
     "Web"
   ],
   "author": "Tarso Queiroz",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0"
+  }
 }
