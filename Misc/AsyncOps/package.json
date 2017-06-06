@@ -1,0 +1,16 @@
+{
+  "name": "asyncops",
+  "version": "1.0.0",
+  "description": "Handling Node.js asynchronous operations",
+  "main": "asyncops.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Async",
+    "Promises"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT"
+}
