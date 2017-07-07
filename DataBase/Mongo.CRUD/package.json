@@ -1,0 +1,30 @@
+{
+  "name": "mongocrud",
+  "version": "1.0.0",
+  "description": "Node.js Express MongoDB CRUD Tutorial",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "NodeJS",
+    "ExpressJS",
+    "MongoDB",
+    "Tutorial"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "source": "http://appdividend.com/2017/03/30/node-and-express-simple-crud-tutorial-with-mongodb/",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.1"
+  },
+
+  "ondeestou": {
+
+    "step":   "Estou no Step 10",
+    "motivo": "Ver melhor o MONGOOSE"
+
+  }
+}
