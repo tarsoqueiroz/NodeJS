@@ -1,0 +1,19 @@
+{
+  "name": "mongoosetst",
+  "version": "1.0.0",
+  "description": "Test of Mongoose module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^4.11.1"
+  }
+}
