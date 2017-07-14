@@ -1,0 +1,27 @@
+{
+  "name": "redisbasics",
+  "version": "1.0.0",
+  "description": "The basics about NodeJS use of Redis",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Redis",
+    "Tutorial",
+    "Basic",
+    "Examples"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "redis": "^2.7.1"
+  },
+  "sources": [
+    "https://thomashunter.name/blog/redis-and-node-part-1-the-basics/",
+    "https://thomashunter.name/blog/redis-and-node-part-2-shared-state/",
+    "",
+    ""
+  ]
+}
