@@ -1,0 +1,24 @@
+{
+  "name": "mongosimplecrud",
+  "version": "1.0.0",
+  "description": "Simple CRUD in Mongo DB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Mongo",
+    "CRUD"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "source": [
+    "https://tutorials.kode-blog.com/nodejs-database-mongodb",
+    ""
+  ],
+  "dependencies": {
+    "console.table": "^0.8.0",
+    "mongodb": "^2.2.30"
+  }
+}
