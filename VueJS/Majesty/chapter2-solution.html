@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Greetings friend</title>
+</head>
+
+<body>
+<div id="app">
+    <h1>Hello {{ message }}!!!</h1>
+    <p>Enter your name:</p>
+    <input v-model="message">
+</div>
+</body>
+
+<body>
+<div class="container">
+    <h2>Hello {{ name }}</h2>
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="name">Enter your name:</label>
+            <!-- binded input to 'name' -->
+            <input v-model="name" type="text" class="form-control" id="name" placeholder="Name">
+        </div>
+    </form>
+</div>
+
+
+
+
+
+<script src="./lib/vue.min.js"></script>
+
+<script>
+  var data = {
+    message: 'Mr. Anderson'
+  };
+
+  new Vue({
+    el: '#app',
+    data: data
+  })
+</script>
+</html>
