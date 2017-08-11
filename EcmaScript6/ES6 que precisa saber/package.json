@@ -1,0 +1,24 @@
+{
+  "name": "es6-tutorial01",
+  "version": "1.0.0",
+  "description": "O Guia do ES6: TUDO que você precisa saber",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.js",
+    "ES6",
+    "ECMAScript6",
+    "ES2015"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "source": [
+    "https://medium.com/@matheusml/o-guia-do-es6-tudo-que-voc%C3%AA-precisa-saber-8c287876325f"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
