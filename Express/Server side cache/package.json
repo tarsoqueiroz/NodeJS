@@ -1,0 +1,26 @@
+{
+  "name": "sscacheexpr",
+  "version": "1.0.0",
+  "description": "Simple server side cache Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "Server",
+    "Cache"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4",
+    "jade": "^1.11.0",
+    "memory-cache": "^0.2.0"
+  },
+  "sources": [
+    "https://medium.com/the-node-js-collection/simple-server-side-cache-for-express-js-with-node-js-45ff296ca0f0",
+    "https://glitch.com/edit/#!/server-side-cache-express?path=server.js:1:0"
+  ]
+}
