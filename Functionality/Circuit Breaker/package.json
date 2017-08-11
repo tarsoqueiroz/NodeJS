@@ -1,0 +1,22 @@
+{
+  "name": "circuitbreaker",
+  "version": "1.0.0",
+  "description": "Tiny circuit breaker implementation. Wrapped service must return Promise.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.js",
+    "Circuit",
+    "Breaker"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "source": [
+    "https://gradeup.github.io/ckt-breaker/"
+  ],
+  "dependencies": {
+    "ckt-breaker": "^1.0.0"
+  }
+}
