@@ -1,0 +1,20 @@
+{
+  "name": "etherweb3",
+  "version": "1.0.0",
+  "description": "web3 contains the eth object - web3.eth (for specifically Ethereum blockchain interactions) and the shh object - web3.shh (for Whisper interaction).",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Ethereum",
+    "Web3",
+    "Blockchain"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "lerna": "^2.1.2"
+  }
+}
