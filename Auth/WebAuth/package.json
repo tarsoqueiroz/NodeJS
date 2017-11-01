@@ -1,0 +1,28 @@
+{
+  "name": "webauthentication",
+  "version": "1.0.0",
+  "description": "Server & Authentication Basics: Express, Sessions, Passport, and cURL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "nodemon --ignore sessions/ auth.js"
+  },
+  "keywords": [
+    "NodeJS",
+    "Server",
+    "Authentication",
+    "Express",
+    "Session",
+    "Passport",
+    "cURL"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "source": "https://medium.com/@evangow/server-authentication-basics-express-sessions-passport-and-curl-359b7456003d",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "session-file-store": "^1.1.2",
+    "uuid": "^3.1.0"
+  }
+}
