@@ -16,7 +16,9 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
 const users = [
-  {id: '2f24vvg', email: 'test@test.com', password: 'password'}
+  {id: 'user1', email: 'test1@test.com', password: 'pass'},
+  {id: 'user2', email: 'test2@test.com', password: 'pass'},
+  {id: 'user3', email: 'test3@test.com', password: 'pass'}
 ]
 
 // configure passport.js to use the local strategy
@@ -39,13 +41,6 @@ passport.use(new LocalStrategy(
 passport.serializeUser((user, done) => {
   console.log('Inside serializeUser callback. User id is save to the session file store here')
   done(null, user.id);
-});
-
-passport.deserializeUser((id, done) => {
-  console.log('Inside deserializeUser callback')
-  console.log(`The user id passport saved in the session file store is: ${id}`)
-  const user = users[0].id === id ? users[0] : false;
-  done(null, user);
 });
 
 // create the server
@@ -95,16 +90,6 @@ app.post('/login', (req, res, next) => {
       return res.send('You were authenticated & logged in!\n');
     })
   })(req, res, next);
-})
-
-app.get('/authrequired', (req, res) => {
-  console.log('Inside GET /authrequired callback')
-  console.log(`User authenticated? ${req.isAuthenticated()}`)
-  if(req.isAuthenticated()) {
-    res.send('you hit the authentication endpoint\n')
-  } else {
-    res.redirect('/')
-  }
 })
 
 // tell the server what port to listen on
