@@ -1,0 +1,19 @@
+{
+  "name": "bgxaintest",
+  "version": "1.0.0",
+  "description": "Test of BigchainDB with Node.JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "BigchainDB",
+    "Blockchain"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "bigchaindb-driver": "^0.3.0"
+  }
+}
