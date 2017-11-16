@@ -9,11 +9,12 @@
 const config = require('./rtkdb01.json');
 const rtkdb = require('rethinkdb');
 
-var   promisseRtkdb = rtkdb.connect({host: config.host, port: config.port});
-var   connRtkdb = null;
+let promisseRtkdb = rtkdb.connect({host: config.host, port: config.port})
+let connRtkdb = null
 
-promisseRtkdb.then(function (conn) {
-    console.log('Connected to RethingDB...');
+promisseRtkdb
+  .then(function (conn) {
+    console.log('Connected to RethinkDB...');
     connRtkdb = conn;
 
     connRtkdb.close(function (error) {
@@ -21,7 +22,7 @@ promisseRtkdb.then(function (conn) {
         throw error;
       }
       else {
-        console.log('Disconnected from RethingDB...');
+        console.log('Disconnected from RethinkDB...');
       }
     })
   })
