@@ -1,0 +1,20 @@
+{
+  "name": "onetimepasslib",
+  "version": "1.0.0",
+  "description": "otplib is a JavaScript One Time Password (OTP) library. It provides both functional and class based interfaces for dealing with OTP generation and verification.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "otplib",
+    "OTP"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "source": "https://yeojz.github.io/otplib/docs/",
+  "dependencies": {
+    "otplib": "^7.0.0"
+  }
+}
