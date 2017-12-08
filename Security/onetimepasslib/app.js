@@ -1,26 +1,34 @@
 /**
- * Created by USER: tarso.
- * On         DATE: 20/11/17.
- * By         NAME: app.
+ * Created by USER: tarso
+ * On         DATE: 04/12/17
+ * By         NAME: app.js
  */
 
 'use strict';
 
 const otplib = require('otplib')
 
-//const secret = otplib.authenticator.generateSecret()
-const secret = "HFDTS5TZMVDUKRSUOJXWWNCXNRGHO2DK"
-const token  = otplib.authenticator.generate(secret)
+const otpNewSecret = otplib.authenticator.generateSecret()
+const otpLibSecret = "J5KVQQ3HKV2GGTKJJJ2HASCRJ5XWUQLR"
+console.log("(1) otpNewSecret.......................:", otpNewSecret)
+console.log("(2) otpLibSecret.......................:", otpLibSecret)
 
-console.log(secret)
-console.log(token)
+const otpTokenNewSecret  = otplib.authenticator.generate(otpNewSecret)
+const otpTokenLibSecret  = otplib.authenticator.generate(otpLibSecret)
+console.log("(3) Token otpNewSecret.................:", otpTokenNewSecret)
+console.log("(4) Token otpTokenLibSecret............:", otpTokenLibSecret)
 
-const isValid1 = otplib.authenticator.check(123456, secret)
-// or
-const isValid2 = otplib.authenticator.verify({
-  secret,
-  token: 123456
+const passTOTP = 692413
+console.log("(5) passTOTP...........................:", passTOTP)
+
+const isValidNewSecret = otplib.authenticator.check(passTOTP, otpNewSecret)
+
+const isValidLibSecret = otplib.authenticator.verify({
+  secret: otpLibSecret,
+  token: passTOTP
 })
 
-console.log(isValid1)
-console.log(isValid2)
+console.log("(6) Token NewSecret vs passTOTP valid? :", isValidNewSecret)
+console.log("(7) Token LibSecret vs passTOTP valid? :", isValidLibSecret)
+
+
