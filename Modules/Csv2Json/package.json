@@ -1,0 +1,18 @@
+{
+  "name": "csv2json",
+  "version": "1.0.0",
+  "description": "csvtojson module is a comprehensive nodejs csv parser to convert csv to json or column arrays. It can be used as node.js library / command line tool / or in browser with help of browserify or webpack.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CsvToJson",
+    "NodeJS"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "csvtojson": "^1.1.9"
+  }
+}
