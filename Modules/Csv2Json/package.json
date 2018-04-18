@@ -10,6 +10,7 @@
     "CsvToJson",
     "NodeJS"
   ],
+  "source": "https://github.com/Keyang/node-csvtojson",
   "author": "Tarso Queiroz",
   "license": "MIT",
   "dependencies": {
