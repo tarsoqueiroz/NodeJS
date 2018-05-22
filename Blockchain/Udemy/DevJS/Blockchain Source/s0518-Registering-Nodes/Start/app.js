@@ -7,10 +7,18 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 
+let port = 3000
+
+// access the arguments
+process.argv.forEach(function(val,index,array){
+  port = array[2]
+})
+
+
 let transactions = []
 
 let genesisBlock = new Block()
-let blockchain = new Blockchain(genesisBlock)
+//let blockchain = new Blockchain(genesisBlock)
 
 app.use(bodyParser.json())
 
@@ -45,6 +53,6 @@ app.get('/blockchain',function(req,res){
 
 })
 
-app.listen(3000,function(){
+app.listen(port,function(){
   console.log("server has started")
 })
