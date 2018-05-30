@@ -7,8 +7,9 @@ behind technologies like Bitcoin and Ethereum!
 
 ## Udemy Course
 
-* [Main](https://www.udemy.com/build-blockchain) - The link to the course
-* [Content](https://www.udemy.com/build-blockchain/learn/v4/content) - Course content
+* [Main](https://www.udemy.com/build-blockchain) - The link to the course.
+* [Content](https://www.udemy.com/build-blockchain/learn/v4/content) - The course content.
+* [Code](https://github.com/15Dkatz/sf-chain-guides) - The completed code for this course.
 
 ## Instructor
 
