@@ -1,0 +1,8 @@
+Organize the project:
+- Create blockchain/
+- Move block.js, block.test.js, index.js, index.test.js to blockchain/
+- Rename index.js and index.test.js to index.js and index.test.js
+- In index.test.js, update the blockchain requirement:
+  `const Blockchain = require('./index');`
+- Create app/
+- Create app/index.js

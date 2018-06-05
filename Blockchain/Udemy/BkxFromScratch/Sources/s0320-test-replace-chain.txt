@@ -1,4 +1,4 @@
-Test the new chain replacement functionality. In blockchain.test.js:
+Test the new chain replacement functionality. In index.test.js:
 ```
 it('replaces the chain with a valid chain', () => {
 	bc2.addBlock('goo');

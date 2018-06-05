@@ -1,3 +1,5 @@
+// block.js
+
 const SHA256 = require('crypto-js/sha256');
 
 class Block {
@@ -28,6 +30,7 @@ class Block {
   }
 
   static mineBlock(lastBlock, data) {
+
     const timestamp = Date.now();
     const lastHash = lastBlock.hash;
     console.log(lastHash)

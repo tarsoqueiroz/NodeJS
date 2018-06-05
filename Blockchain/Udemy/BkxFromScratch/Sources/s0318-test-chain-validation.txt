@@ -1,4 +1,4 @@
-Test Chain Validation. In blockchain.test.js, add a second blockchain instance:
+Test Chain Validation. In index.test.js, add a second blockchain instance:
 ```
 let bc, bc2;
 …

@@ -1,5 +1,5 @@
 Test the `Blockchain` class:
-Create blockchain.test.js:
+Create index.test.js:
 
 ```
 const Blockchain = require('./blockchain');

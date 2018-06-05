@@ -1,7 +1,7 @@
 Create the `Blockchain` that creates a chain based on the `Block` class:
-Create blockchain.js
+Create index.js
 
-blockchain.js:
+index.js:
 ```
 const Block = require('./block');
 
