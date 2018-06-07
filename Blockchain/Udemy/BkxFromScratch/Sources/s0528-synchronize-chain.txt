@@ -1,4 +1,5 @@
-Use the received chain to synchronize chains across all instances with the `replaceChain` function. In the `P2pServer` class, in the `messageHandler` function:
+Use the received chain to synchronize chains across all instances with the `replaceChain` function.
+In the `P2pServer` class, in the `messageHandler` function:
 ```
 messageHandler(socket) {
 	socket.on('message', message => {
@@ -7,7 +8,9 @@ messageHandler(socket) {
   });
 });
 ```
-Add a syncChains function to `P2pServer` class. Also cut the existing `socket.send(JSON.stringify(this.blockchain.chain));` code into a helper method called `sendChain`. Then fix the `connectSocket` to use the helper function:
+Add a syncChains function to `P2pServer` class.
+Also cut the existing `socket.send(JSON.stringify(this.blockchain.chain));` code into a helper
+method called `sendChain`. Then fix the `connectSocket` to use the helper function:
 ```
 sendChain(socket) {
 	socket.send(JSON.stringify(this.blockchain.chain));
