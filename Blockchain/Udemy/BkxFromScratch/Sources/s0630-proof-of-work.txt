@@ -1,4 +1,5 @@
-The proof-of-work system will deter dishonest contributors to the blockchain by requiring them to do computational work. In block.js, declare a DIFFICULTY constant - the “difficulty” of the system for mining blocks:
+The proof-of-work system will deter dishonest contributors to the blockchain by requiring them to do computational work.
+In block.js, declare a DIFFICULTY constant - the “difficulty” of the system for mining blocks:
 ```
 // After the imports
 const DIFFICULTY = 4;

@@ -2,12 +2,15 @@
 
 const SHA256 = require('crypto-js/sha256');
 
+const DIFFICULTY = 4;
+
 class Block {
-  constructor(timestamp, lastHash, hash, data) {
+  constructor(timestamp, lastHash, hash, data, nonce) {
     this.timestamp = timestamp;
     this.lastHash = lastHash;
     this.hash = hash;
     this.data = data;
+    this.nonce = nonce;
   }
 
   toString() {
@@ -15,37 +18,44 @@ class Block {
       Timestamp : ${this.timestamp}
       Last Hash : ${this.lastHash}
       Hash      : ${this.hash}
+      Nonce     : ${this.nonce}
       Data      : ${this.data}`;
   }
 
   static genesis() {
     const timestamp = 1528139001561;
-    const lastHash = 'ce1e9a2000000000000000000000000000000000000000000000000000000000';
+    const lastHash = '0000000000000000000000000000ce1e9a200000000000000000000000000000';
     const data = [{"Block":"Genesis"}];
-    const hash = Block.hash(timestamp, lastHash, data);
+    const nonce = 0;
+    const hash = Block.hash(timestamp, lastHash, data, nonce);
 
-    console.log('Hash on genesis():', hash);
+    // console.log('Hash on genesis():', hash);
 
-    return new this(timestamp, lastHash, hash, data);
+    return new this(timestamp, lastHash, hash, data, nonce);
   }
 
   static mineBlock(lastBlock, data) {
 
-    const timestamp = Date.now();
     const lastHash = lastBlock.hash;
-    console.log(lastHash)
-    const hash = Block.hash(timestamp, lastHash, data);
+    let hash, timestamp;
+    let nonce = 0;
 
-    return new this(timestamp, lastHash, hash, data);
+    do {
+      nonce++;
+      timestamp = Date.now();
+      hash = Blockhash = Block.hash(timestamp, lastHash, data, nonce);
+    } while (hash.substring(0, DIFFICULTY) !== '0'.repeat(DIFFICULTY));
+
+    return new this(timestamp, lastHash, hash, data, nonce);
   }
 
-  static hash(timestamp, lastHash, data) {
-    return SHA256(`${timestamp}${lastHash}${data}`).toString();
+  static hash(timestamp, lastHash, data, nonce) {
+    return SHA256(`${timestamp}${lastHash}${data}${nonce}`).toString();
   }
 
   static blockHash(block) {
-    const { timestamp, lastHash, data } = block;
-    return Block.hash(timestamp, lastHash, data);
+    const { timestamp, lastHash, data, nonce } = block;
+    return Block.hash(timestamp, lastHash, data, nonce);
   }
 }
 
