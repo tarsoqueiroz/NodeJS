@@ -1,0 +1,23 @@
+{
+  "name": "httpreqres",
+  "version": "1.0.0",
+  "description": "Test of HTTP request and response",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.JS",
+    "HTTP",
+    "Web",
+    "Server",
+    "Request",
+    "Response"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}

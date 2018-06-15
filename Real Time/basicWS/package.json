@@ -1,0 +1,22 @@
+{
+  "name": "basicws",
+  "version": "1.0.0",
+  "description": "Creating a Basic Node.js WS WebSocket Server and Client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "nodemon ./wsserver.js",
+    "dev-client": "nodemon ./wsclient.js"
+  },
+  "keywords": [
+    "Node.JS",
+    "WS.js",
+    "WebSocket"
+  ],
+  "source": "https://www.youtube.com/watch?v=KjcFHQ56U4U",
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^5.2.0"
+  }
+}

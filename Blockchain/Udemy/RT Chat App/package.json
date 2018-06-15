@@ -1,0 +1,21 @@
+{
+  "name": "rtchatapp",
+  "version": "1.0.0",
+  "description": "Udemy course - Creating a Node.js Chat Application.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./server"
+  },
+  "keywords": [
+    "Udemy",
+    "Chat",
+    "SocketIO",
+    "NodeJS"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^3.0.10",
+    "socket.io": "^2.1.1"
+  }
+}
