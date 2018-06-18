@@ -1,0 +1,23 @@
+{
+  "name": "socketiochat",
+  "version": "0.0.1",
+  "description": "Socket.io Get Started: Chat application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index"
+  },
+  "keywords": [
+    "Node.js",
+    "Socket.io",
+    "Chat",
+    "GetStarted"
+  ],
+  "source": "https://socket.io/get-started/chat/",
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  }
+}
