@@ -10,6 +10,7 @@ class P2pServer {
   constructor(blockchain) {
     this.blockchain = blockchain;
     this.sockets = [];
+
   }
 
   listen() {
