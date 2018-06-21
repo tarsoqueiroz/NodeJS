@@ -5,7 +5,9 @@
  */
 
 const WebSocket = require('ws');
-const wss = new WebSocket.Server({ port: 12345 });
+const wss = new WebSocket.Server({
+  port: 12345,
+});
 
 function broadcast (data) {
   wss.clients.forEach(ws => {

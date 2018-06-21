@@ -17,7 +17,7 @@ connection.addEventListener('message', e => {
 
   p.textContent = e.data;
   box.appendChild(p);
-})
+});
 
 function send(data) {
   if (connection.readyState === WebSocket.OPEN) {
