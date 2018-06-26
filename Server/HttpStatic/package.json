@@ -1,0 +1,24 @@
+{
+  "name": "httpstatic",
+  "version": "1.0.0",
+  "description": "Simple HTTP server for static pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index",
+    "dev": "nodemon ./index"
+  },
+  "keywords": [
+    "NodeJS",
+    "HTTPd",
+    "WebServer"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "node-static": "^0.7.10",
+    "static-server": "^2.2.1"
+  }
+}
