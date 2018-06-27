@@ -21,10 +21,26 @@ const options = {
 const express = require('express');
 const app = express();
 
+// Middleware for log
+const tqLogger = function (req, res, next) {
+  console.log('Logged...', Date.now());
+  next();
+};
+// Middleware for 404
+const tq404 = function(req, res, next) {
+  console.log('404');
+  res.redirect('./404.html');
+};
+
 //setting middleware
+app.use(tqLogger);
+
 console.log('./public');
 app.use(express.static('./public')); //Serves resources from public folder
 
+app.use(tq404);
+
+// Starting the server
 var server = app.listen(HTTP_PORT);
 
 console.log('express.static running at http://localhost:%d', HTTP_PORT);
