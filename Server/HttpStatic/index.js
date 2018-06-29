@@ -2,45 +2,58 @@
  * index.js
  *
  * Created by tarso on 26/06/18
- * Source: https://www.youtube.com/watch?v=Hk2LkOD7ZH0
- *         http://expressjs.com/pt-br/guide/using-middleware.html
+ * Source:
  */
 
-const HTTP_PORT = process.env.HTTP_PORT || 8080; // $ HTTP_PORT=8080 npm run dev
+const HTTP_PORT = process.env.HTTP_PORT || 8443; // $ HTTP_PORT=8443 npm run dev
+
+const http2 = require('http2');
+const fs = require('fs');
+const path = require('path');
+const mime = require('mime-types');
+
+const {
+  HTTP2_HEADER_PATH,
+  HTTP2_HEADER_METHOD,
+  HTTP_STATUS_NOT_FOUND,
+  HTTP_STATUS_INTERNAL_SERVER_ERROR
+} = http2.constants;
+
 const options = {
-  dotfiles: 'ignore',
-  etag: false,
-  extensions: ['html', 'htm'],
-  index: false,
-  maxAge: '1d',
-  redirect: false,
-  setHeaders: function (res, path, stat) {
-    res.set('x-timestamp', Date.now());
+  key:  fs.readFileSync('./certificates/server.key.pem'),
+  cert: fs.readFileSync('./certificates/server.crt.pem'),
+  ca: fs.readFileSync('./certificates/ca.crt.pem')
+}
+
+const server = http2.createSecureServer(options);
+
+const serverRoot = "./public";
+
+function respondToStreamError(err, stream) {
+  console.log(err);
+  if (err.code === 'ENOENT') {
+    stream.respond({ ":status": HTTP_STATUS_NOT_FOUND });
+  } else {
+    stream.respond({ ":status": HTTP_STATUS_INTERNAL_SERVER_ERROR });
   }
-};
-const express = require('express');
-const app = express();
+  stream.end();
+}
 
-// Middleware for log
-const tqLogger = function (req, res, next) {
-  console.log('Logged...', Date.now());
-  next();
-};
-// Middleware for 404
-const tq404 = function(req, res, next) {
-  console.log('404');
-  res.redirect('./404.html');
-};
+server.on('stream', (stream, headers) => {
+  const reqPath = headers[HTTP2_HEADER_PATH];
+  const reqMethod = headers[HTTP2_HEADER_METHOD];
 
-//setting middleware
-app.use(tqLogger);
+  const fullPath = path.join(serverRoot, reqPath);
+  const responseMimeType = mime.lookup(fullPath);
 
-console.log('./public');
-app.use(express.static('./public')); //Serves resources from public folder
+  stream.respondWithFile(fullPath, {
+    'content-type': responseMimeType
+  }, {
+    onError: (err) => respondToStreamError(err, stream)
+  });
 
-app.use(tq404);
 
-// Starting the server
-var server = app.listen(HTTP_PORT);
+});
+server.listen(HTTP_PORT);
 
-console.log('express.static running at http://localhost:%d', HTTP_PORT);
+console.log('HTTP/2 Static Server running at https://ecelepar:%d', HTTP_PORT);
