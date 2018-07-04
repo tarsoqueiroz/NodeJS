@@ -1,0 +1,29 @@
+{
+  "name": "jwtauth",
+  "version": "1.0.0",
+  "description": "Auth users API with JWT and Passport",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "Source": [
+    "https://tableless.com.br/autenticar-usuarios-com-jwt-e-passport/",
+    "https://medium.com/tableless/entendendo-tokens-jwt-json-web-token-413c6d1397f6"
+  ],
+  "keywords": [
+    "NodeJS",
+    "Auth",
+    "Passport",
+    "JWT",
+    "API"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jwt-simple": "^0.5.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  }
+}
