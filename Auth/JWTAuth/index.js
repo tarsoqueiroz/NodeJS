@@ -52,4 +52,4 @@ app.listen(HTTP_PORT, function() {
 });
 
 module.exports = app;
-console.log('HTTP/2 Static Server running at https://ecelepar:%d', HTTP_PORT);
+console.log('HTTP Static Server running at https://ecelepar:%d', HTTP_PORT);

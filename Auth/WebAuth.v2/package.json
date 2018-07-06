@@ -1,0 +1,28 @@
+{
+  "name": "webauth.v2",
+  "version": "1.0.0",
+  "description": "Remake of authentication basics with Express, Sessions, Passport and cURL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "source": [
+    "https://medium.com/@evangow/server-authentication-basics-express-sessions-passport-and-curl-359b7456003d"
+  ],
+  "keywords": [
+    "NodeJS",
+    "Server",
+    "Authentication",
+    "Express",
+    "Sessions",
+    "Passport",
+    "cURL"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
