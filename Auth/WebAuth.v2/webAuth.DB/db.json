@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id":"2f24vvg",
+      "email": "test@test.com",
+      "password": "password"
+    },
+    {
+      "id":"d1u9nq",
+      "email": "user2@example.com",
+      "password": "password"
+    },
+    {
+      "id":"1234567",
+      "email": "tarso@queiroz.com",
+      "password": "password"
+    },
+    {
+      "id":"2345678",
+      "email": "dutra@tarso.com",
+      "password": "password"
+    }
+  ]
+}

@@ -16,6 +16,7 @@
   "author": "Evan Gow",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
     "session-file-store": "^1.2.0",
