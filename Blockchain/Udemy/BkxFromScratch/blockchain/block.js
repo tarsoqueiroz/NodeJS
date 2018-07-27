@@ -1,4 +1,4 @@
-// block.js
+// blockchain/block.js
 
 const SHA256 = require('crypto-js/sha256');
 const { DIFFICULTY, MINE_RATE } = require('../config');

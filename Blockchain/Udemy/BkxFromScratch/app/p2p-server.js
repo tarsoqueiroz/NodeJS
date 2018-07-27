@@ -1,4 +1,4 @@
-// p2p-server.js
+// app/p2p-server.js
 
 const Websocket = require('ws');
 const P2P_PORT = process.env.P2P_PORT || 5001;

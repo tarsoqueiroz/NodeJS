@@ -1,4 +1,4 @@
-// blockchain.js
+// blockchain/index.js
 
 const Block = require('./block');
 
