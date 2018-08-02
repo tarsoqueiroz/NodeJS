@@ -1,0 +1,24 @@
+{
+  "name": "jestbasic",
+  "version": "1.0.0",
+  "description": "Initial test of Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev-test": "nodemon dev-test",
+    "start": "node ./index",
+    "dev": "nodemon ./index"
+  },
+  "keywords": [
+    "NodeJS",
+    "Test"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.4.2"
+  },
+  "jest": {
+    "verbose": true
+  }
+}
