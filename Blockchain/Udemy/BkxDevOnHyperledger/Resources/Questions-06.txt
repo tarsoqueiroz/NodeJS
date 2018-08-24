@@ -1,0 +1,16 @@
+Pergunta 1: Hyperledger Composer offers a set of _______ to accelerate development of HL Fabric applications
+Resposta 1: Tools
+
+Pergunta 2: In Composer based Business Network Applications, Smart contracts | Chaincode are written in _______
+Resposta 2: Javascript
+
+Pergunta 3: Advantages of using Composer
+Resposta 3: All of the above
+
+Pergunta 4: Business Network Application Model is created in Composer using:
+Resposta 4: Composer Modelling Language
+
+Pergunta 5: In which Composer Runtime would the Developers carry out the unit testing?
+Resposta 5: Embedded Runtime
+
+

@@ -1,0 +1,24 @@
+Pergunta 1: Anonymous access to Hyperledger Fabric based business application is not allowed
+Resposta 1: True
+
+Pergunta 2: Access to Hyperledger Fabric Business Network Application is granted based on the ______ 
+            of the participant
+Resposta 2: Role
+
+Pergunta 3: Roles are defined by the Hyperledger Fabric Business Network Application developer/designer
+Resposta 3: True
+
+Pergunta 4: Member in the context of Hyperledger DLT network refers to _______
+Resposta 4: Legally separate | Independent entities
+
+Pergunta 5: Participants are assigned an identity by way of:
+Resposta 5: X509 certificates
+
+Pergunta 6: Hyperledger Fabric Infrastructure components are also issued a x509 certificate
+Resposta 6: True
+
+Pergunta 7: Members of the Hyperledger Fabric DLT network may be allowed to issue certificates to their
+            employees and for their infrastructure
+Resposta 7: True
+
+

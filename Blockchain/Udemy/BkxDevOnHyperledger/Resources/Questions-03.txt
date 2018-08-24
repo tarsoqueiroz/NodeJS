@@ -1,0 +1,12 @@
+Pergunta 1: Assets in Hyperledger Fabric are represented in JSON or Binary
+Resposta 1: True
+
+Pergunta 2: Anything in real world that can be represented _______ may be managed on Blockchain
+Resposta 2: Digitally
+
+Pergunta 3: The transactions or actions that can be performed on the assets are coded in
+Resposta 3: Chaincode
+
+Pergunta 4: A Transaction represent the
+Resposta 4: State change of an asset
+

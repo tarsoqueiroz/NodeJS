@@ -1,0 +1,26 @@
+Pergunta 1: Depending on the context, Hyperledger may refer to
+Resposta 1: All of the above
+
+Pergunta 2: What is distributed in DLT?
+Resposta 2: Book of records
+
+Pergunta 3: Assets represent _________
+Resposta 3: Value
+
+Pergunta 4: Every time there is a change in state of asset a ___________ gets added to DLT
+Resposta 4: Transaction
+
+Pergunta 5: A business does not want to be identified by others having access to the DLT. 
+            This refers to the ______ challenge
+Resposta 5: Privacy
+
+Pergunta 6: A business wants only certain parties using the DLT to have visibility/access to their data.
+            This refers to the ______ challenge
+Resposta 6: Confidentiality
+
+Pergunta 7: Public chains such as Ethereum  address following challenges associated with DLT technologies:
+            * Privacy
+            * Confidentiality
+            * Standardization
+Resposta 7: False
+ 

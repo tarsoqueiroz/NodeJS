@@ -1,0 +1,16 @@
+Pergunta 1: All nodes are not equal in Hyperledger Fabric
+Resposta 1: True
+
+Pergunta 2: Hyperledger Fabric has multiple types of nodes. Which one is not one of them?
+Resposta 2: Membership Service Provider
+
+Pergunta 3: A member can participate in multiple Hyperledger blockchain networks by way of _______
+Resposta 3: Channels
+
+Pergunta 4: Each channel manages its own _______  and  ________
+Resposta 4: Chaincode Ledger
+
+Pergunta 5: Client nodes use the Node's certificate for signing the transactions
+Resposta 5: False
+
+

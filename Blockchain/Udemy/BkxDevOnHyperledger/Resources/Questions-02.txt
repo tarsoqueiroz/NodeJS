@@ -1,0 +1,24 @@
+Pergunta 1: Which of the characteristic is desired in a DLT for business?
+Resposta 1: All of the above
+
+Pergunta 2: Permissioned DLT network requires the participants to get the authorization from
+            some entity before they can participate in the business network.
+            Non permissioned network such as Ethereum - any member of public can participate
+Resposta 2: True
+
+Pergunta 3: One essential element of Blockchain technology is the availability of crypto currency
+            that can be used as value token on the DLT platform
+Resposta 3: False
+
+Pergunta 4: On public chains all of the data is available to anyone who has the replica of the ledger.
+            There is no guarantee that confidentiality of data will be maintained. 
+Resposta 4: True
+
+Pergunta 5: Both Ethereum public chain and Hyperledger support the concept of ____________
+Resposta 5: Programability
+
+Pergunta 6: You have been tasked to design a Blockchain application. This application will use a value 
+            token that participants will use for trading with each other. 
+            Which Blockhain can be used (technology perspective)?
+Resposta 6: Both the above will work
+
