@@ -1,0 +1,17 @@
+{
+  "name": "ethereumweb3",
+  "version": "1.0.0",
+  "description": "Test of Web3 Ethereum",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Ethereum",
+    "Solidity",
+    "Web3"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT"
+}
