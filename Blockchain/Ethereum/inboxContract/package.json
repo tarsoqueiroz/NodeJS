@@ -1,0 +1,21 @@
+{
+  "name": "inboxcontract",
+  "version": "1.0.0",
+  "description": "First Solidity contract",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Ethereum",
+    "Solidity",
+    "Contract"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "ganache-cli": "^6.1.8",
+    "mocha": "^5.2.0",
+    "solc": "^0.4.25"
+  }
+}
