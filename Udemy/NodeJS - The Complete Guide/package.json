@@ -1,0 +1,16 @@
+{
+  "name": "nodejstcg",
+  "version": "1.0.0",
+  "description": "Udemy course - NodeJS The Complete Guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Udemy",
+    "Node.JS",
+    "Course"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT"
+}
