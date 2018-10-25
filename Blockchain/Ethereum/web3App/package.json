@@ -1,0 +1,21 @@
+{
+  "name": "web3app",
+  "version": "1.0.0",
+  "description": "Test of Ethereum infrastructure",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Ethereum",
+    "Blockchain",
+    "NodeJS",
+    "Web3JS"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "util": "^0.11.0",
+    "web3": "^1.0.0-beta.36"
+  }
+}
