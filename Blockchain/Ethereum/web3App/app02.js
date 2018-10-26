@@ -24,14 +24,20 @@ function getQtyOfBlocks() {
   });
 }
 
-function getBlockOfChain(nNumOfBlock) {
+function getBlockOfChain(nNumOfBlock, nLastBlock, jsonBlocks) {
   return new Promise(function (resolve, reject) {
     try {
-      web3.eth.getBlock(nSx1, function (error, result) {
+      web3.eth.getBlock(nNumOfBlock, function (error, result) {
         if (error) {
           reject(new Error(error));
         } else {
-          resolve(result.number, result.parentHash, result.hash);
+          jsonBlocks[nNumOfBlock] = JSON.parse(util.format('{"hash":"%s","parentHash":"%s"}', result.hash, result.parentHash));
+          if (nNumOfBlock < nLastBlock) {
+            getBlockOfChain(nNumOfBlock + 1, nLastBlock, jsonBlocks);
+          } else {
+            // console.log(jsonBlocks);
+            resolve(jsonBlocks);
+          }
         }
       });
     } catch (e) {
@@ -46,7 +52,7 @@ var lastBlock = getQtyOfBlocks();
 console.log('Get qty of blocks 1');
 nLastBlock = lastBlock
   .then(result => {
-    console.log('1) The Blockchain has', result, 'blocks!!!');
+    console.log('1) The Blockchain has', result, 'blocks on chain!!!');
     return (result);
   })
   .catch(error => {
@@ -55,9 +61,21 @@ nLastBlock = lastBlock
 
 console.log('Get qty of blocks 2');
 getQtyOfBlocks()
-  .then(result => {
-    console.log('2) The Blockchain has', result, 'blocks!!!');
-    return (result);
+  .then(blocksInChain => {
+    var nLastBlock = blocksInChain;
+    var nBlock = 0;
+    var jsonBlockChain = {};
+
+    console.log('Starting get blocks...');
+    getBlockOfChain(nBlock, nLastBlock, jsonBlockChain)
+      .then (blockChain => {
+        console.log('2) The Blockchain is ');
+        console.log(blockChain);
+        return (blockChain);
+      })
+      .catch(error => {
+        console.log(error);
+      });
   })
   .catch(error => {
     console.log(error);
