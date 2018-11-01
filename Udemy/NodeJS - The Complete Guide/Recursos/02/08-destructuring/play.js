@@ -1,9 +1,3 @@
-/**
- * play.js
- *
- * Created by tarso on 26/10/18
- */
-
 const person = {
   name: 'Max',
   age: 29,

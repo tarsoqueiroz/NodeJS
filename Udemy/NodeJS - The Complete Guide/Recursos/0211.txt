@@ -1,3 +1,0 @@
-https://developer.mozilla.org/en-US/docs/Learn/JavaScript
-https://academind.com/learn/javascript/
-https://academind.com/learn/javascript/reference-vs-primitive-values/
