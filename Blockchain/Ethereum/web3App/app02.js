@@ -6,7 +6,7 @@
 
 const Web3 = require('web3');
 const util = require('util');
-const web3 = new Web3(new Web3.providers.HttpProvider("http://10.15.20.117:18501"));
+const web3 = new Web3(new Web3.providers.HttpProvider("http://10.15.20.117:18545"));
 
 function getQtyOfBlocks() {
   return new Promise(function (resolve, reject) {
