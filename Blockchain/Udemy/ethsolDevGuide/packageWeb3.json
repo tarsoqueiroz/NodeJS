@@ -1,0 +1,19 @@
+{
+  "name": "web3app",
+  "version": "1.0.0",
+  "description": "Instalation of Web3 module for use on other equipment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.js",
+    "Web3.js",
+    "Blockchain"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "web3": "^1.0.0-beta.36"
+  }
+}

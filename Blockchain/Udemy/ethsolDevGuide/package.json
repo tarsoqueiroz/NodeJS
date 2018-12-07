@@ -1,0 +1,30 @@
+{
+  "name": "ethsoldevguide",
+  "version": "1.0.0",
+  "description": "Ethereum and Solidity: The Complete Developer's Guide - Udemy Course",
+  "mynotes": {
+    "note1": "npm install --save solc@0.4.250",
+    "note2": "web3 from my tar.gz"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "moch": "0.0.1",
+    "mocha": "^5.2.0",
+    "solc": "^0.4.25",
+    "web3": "^1.0.0-beta.36"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Blockchain",
+    "Ethereum",
+    "Solidity",
+    "Udemy",
+    "Course",
+    "Guide"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT"
+}

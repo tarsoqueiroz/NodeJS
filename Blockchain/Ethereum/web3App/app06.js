@@ -32,7 +32,7 @@ console.log(keyNode01Account1.address);
 console.log(keyNode02Account0.address);
 console.log(keyNode02Account1.address);
   */
-const keyBikeOwner = require('./accountKeys/node00account0');
+const keyBikeOwner = require('./accountKeys/node00account0-Pretty');
 console.log('\n*** Keystore from Bike Owner (eth.accounts[0]) ***\n', keyBikeOwner.address);
 
 const decAccountOwner = web3.eth.accounts.decrypt(keyBikeOwner, 'changeit');
