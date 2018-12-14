@@ -1,0 +1,18 @@
+{
+  "name": "cb2async",
+  "version": "1.0.0",
+  "description": "From Callbacks to Async/Await",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Javascript",
+    "NodeJS",
+    "callback",
+    "async",
+    "await"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT"
+}
