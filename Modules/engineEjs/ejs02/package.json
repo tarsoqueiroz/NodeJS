@@ -1,0 +1,21 @@
+{
+  "name": "ejs02",
+  "version": "1.0.0",
+  "description": "Sample for EJS in Node from Scotch.io",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "EJS",
+    "Sample"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "source": "https://scotch.io/tutorials/use-ejs-to-template-your-node-application"
+}

@@ -1,0 +1,12 @@
+*** Seção 8, aula 110 ***
+
+Attached, you find the source code for this section.
+
+When using my source code, make sure to run npm install in the extracted folder!
+
+Recursos para esta aula
+01-working-on-the-navigation.zip
+02-registering-the-routes.zip
+03-storing-product-data.zip
+04-editing-and-deleting-products.zip
+05-adding-another-item.zip

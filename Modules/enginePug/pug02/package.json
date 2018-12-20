@@ -1,0 +1,22 @@
+{
+  "name": "pug02",
+  "version": "1.0.0",
+  "description": "Sample PUG use",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "NodeJS",
+    "PUG",
+    "HTML"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "source": "https://flaviocopes.com/pug/",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
+  }
+}

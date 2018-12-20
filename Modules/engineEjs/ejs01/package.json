@@ -1,0 +1,26 @@
+{
+  "name": "ejs01",
+  "version": "1.0.0",
+  "description": "Sample with EJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "EJS",
+    "Template",
+    "HTML"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "source": "http://tsdn.tecnospeed.com.br/blog-da-consultoria-tecnica-tecnospeed/post/utilizando-a-engine-ejs-para-aplicacoes-em-nodejs",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "faker": "^4.1.0",
+    "nodemon": "^1.18.9"
+  }
+}

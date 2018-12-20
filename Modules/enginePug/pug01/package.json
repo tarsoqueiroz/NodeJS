@@ -1,0 +1,21 @@
+{
+  "name": "pug01",
+  "version": "1.0.0",
+  "description": "Sample for Pug HTML engine",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Pug",
+    "HTML"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
+  },
+  "source": "https://expressjs.com/pt-br/guide/using-template-engines.html"
+}
