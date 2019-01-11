@@ -1,0 +1,16 @@
+{
+  "name": "for-beginners",
+  "version": "1.0.0",
+  "description": "Vue js Tutorial for Beginners (2019)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "VueJS",
+    "JavaScript"
+  ],
+  "author": "Coding Shiksha",
+  "license": "MIT"
+}
