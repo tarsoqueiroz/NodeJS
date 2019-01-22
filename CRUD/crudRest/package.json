@@ -1,0 +1,28 @@
+{
+  "name": "crudrest",
+  "version": "1.0.0",
+  "description": "Setup Basic CRUD app in Express.JS Framework and Node.JS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "Server",
+    "API",
+    "REST",
+    "CRUD",
+    "Mongo"
+  ],
+  "author": "Vaibhav Sharma <vsvaibhav2016@gmail.com>",
+  "source:": "https://medium.com/@vsvaibhav2016/create-crud-application-in-express-js-9b88a5a94299",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.2",
+    "express": "^4.16.4",
+    "mongoose": "^4.13.18",
+    "morgan": "^1.9.1"
+  }
+}
