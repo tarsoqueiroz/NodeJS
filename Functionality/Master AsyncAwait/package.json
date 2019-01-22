@@ -1,0 +1,19 @@
+{
+  "name": "master-asyncawait",
+  "version": "1.0.0",
+  "description": "How to master async/await with this real world example",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Javascript",
+    "Async",
+    "Await",
+    "Callback",
+    "Promise"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT"
+}
