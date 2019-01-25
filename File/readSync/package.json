@@ -1,0 +1,16 @@
+{
+  "name": "readsync",
+  "version": "1.0.0",
+  "description": "Read file in sync mode",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "ReadFile",
+    "Sync"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT"
+}
