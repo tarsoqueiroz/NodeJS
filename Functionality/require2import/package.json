@@ -1,0 +1,16 @@
+{
+  "name": "require2import",
+  "version": "1.0.0",
+  "description": "From Require to Import funcionality",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.JS",
+    "Require",
+    "Import"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT"
+}
