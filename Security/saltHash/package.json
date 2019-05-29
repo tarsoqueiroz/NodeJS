@@ -1,0 +1,21 @@
+{
+  "name": "salthash",
+  "version": "1.0.0",
+  "description": "Test of hashed password with salt",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Password",
+    "Hash",
+    "Salt"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "pbkdf2": "^3.0.17"
+  }
+}
