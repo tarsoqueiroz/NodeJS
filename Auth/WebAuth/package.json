@@ -21,7 +21,7 @@
   "license": "MIT",
   "source": "https://medium.com/@evangow/server-authentication-basics-express-sessions-passport-and-curl-359b7456003d",
   "dependencies": {
-    "axios": "^0.17.0",
+    "axios": "^0.18.1",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
