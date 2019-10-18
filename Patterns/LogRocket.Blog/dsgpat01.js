@@ -23,3 +23,25 @@ let autoIncrementSV = (function() {
 
 console.log(autoIncrementSV());
 console.log(autoIncrementSV());
+
+// Simulating private variables
+
+const autoIncrementerPV = (function() {
+  let value = 0;
+
+  return {
+    incr() {
+        value++
+        console.log(value);
+    },
+
+    get value() {
+        return value;
+    }
+  };
+})();
+
+autoIncrementerPVpa.incr()
+autoIncrementerPV.incr()
+autoIncrementerPV.value
+autoIncrementerPV.value = 3
