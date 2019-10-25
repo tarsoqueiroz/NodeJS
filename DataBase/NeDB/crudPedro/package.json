@@ -1,0 +1,19 @@
+{
+  "name": "crudpedro",
+  "version": "1.0.0",
+  "description": "Criando banco de dados com neDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "NeDB",
+    "CRUD"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "nedb": "^1.8.0"
+  }
+}
