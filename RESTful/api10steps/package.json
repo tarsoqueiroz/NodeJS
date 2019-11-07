@@ -1,0 +1,21 @@
+{
+  "name": "api10steps",
+  "version": "1.0.0",
+  "description": "Criando uma API Node em 10 passos com Express.js",
+  "source": "https://medium.com/xp-inc/criando-uma-api-node-em-10-passos-com-express-js-52b2d612a8a9",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./bin/server.js"
+  },
+  "keywords": [
+    "NodeJS",
+    "API",
+    "ExpressJS"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
