@@ -1,0 +1,17 @@
+{
+  "name": "random.shortid",
+  "version": "1.0.0",
+  "description": "Test of shortid module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "shortid": "^2.2.15"
+  }
+}
