@@ -1,0 +1,21 @@
+{
+  "name": "otherchat",
+  "version": "1.0.0",
+  "description": "In this guide we’ll create a other basic chat application.",
+  "source": "https://socket.io/get-started/chat/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "SocketIO",
+    "Chat"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
