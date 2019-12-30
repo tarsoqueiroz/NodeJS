@@ -1,0 +1,22 @@
+{
+  "name": "cmdreadline",
+  "version": "1.0.0",
+  "description": "Read sync from terminal",
+  "internet": "https://www.youtube.com/watch?v=sYwtBFEYaJY",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Read",
+    "Sync",
+    "Terminal",
+    "Node",
+    "readline-sync"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
