@@ -17,5 +17,8 @@
     "variables"
   ],
   "author": "Tarso Queiroz <tarsoqueiroz@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
