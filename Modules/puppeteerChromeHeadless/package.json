@@ -1,0 +1,25 @@
+{
+  "name": "puppetests",
+  "version": "1.0.0",
+  "description": "Simples tests of puppeteer and Chrome headless",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "sources": [
+    "https://developers.google.com/web/updates/2017/04/headless-chrome",
+    "https://github.com/puppeteer/puppeteer",
+    "https://medium.com/@adityaprakashjoshi1/getting-started-with-puppeteer-headless-chrome-in-nodejs-4826595e3366"
+  ],
+  "keywords": [
+    "NodeJS",
+    "puppeteer",
+    "Chrome",
+    "headless"
+  ],
+  "author": "Tarso Queiroz <tarsoqueiroz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^2.0.0"
+  }
+}
