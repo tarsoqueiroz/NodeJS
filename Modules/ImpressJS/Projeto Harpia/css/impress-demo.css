@@ -19,6 +19,15 @@
     Shall we begin?
 */
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: rgb(255, 203, 65);
+    border-radius: 12px;
+  }
+
 /*
     We start with a good ol' reset.
     That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
@@ -84,13 +93,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: rgb(255, 203, 65);
 }
 
 /*
@@ -187,13 +190,14 @@ a:focus {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    /* opacity: 0.3; */
+    opacity: 1;
 
-    -webkit-transition: opacity 1s;
+    /* -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
     -ms-transition:     opacity 1s;
     -o-transition:      opacity 1s;
-    transition:         opacity 1s;
+    transition:         opacity 1s; */
 }
 
 .impress-enabled .step.active { opacity: 1 }
@@ -213,12 +217,12 @@ a:focus {
     height: 700px;
     padding: 40px 60px;
 
-    background-color: white;
+    background-color: rgba(240, 80, 80, 1);
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 
-    color: rgb(102, 102, 102);
+    color: rgb(255, 200, 60);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-family: 'Open Sans', Arial, sans-serif;
@@ -536,7 +540,8 @@ a:focus {
     position: fixed;
     right: 1px;
     bottom: 1px;
-    opacity: 0.6;
+    opacity: 1;
+    /* opacity: 0.6; */
 }
 .impress-enabled div#impress-toolbar > span {
     margin-right: 10px;
@@ -648,11 +653,11 @@ body.impress-mouse-timeout {
 
         This way user will not see the hint moving down.
     */
-    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    /* -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
     -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
     -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
     -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
-    transition:         opacity 1s,         transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s; */
 }
 
 /*
@@ -684,11 +689,11 @@ body.impress-mouse-timeout {
         into its correct position and after that we fade it in with opacity
         transition.
     */
-    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
+    /* -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
     -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
     -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
     -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
-    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+    transition:         opacity 1s 5s,         transform 0.5s 4.5s; */
 }
 
 /*
