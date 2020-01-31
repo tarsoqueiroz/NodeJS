@@ -29,6 +29,21 @@
   }
 
 /*
+   Fade-in/out is a straightforward fade. Give it enough seconds that all browsers render it clearly.
+*/
+.future .fade-in {
+    opacity: 0.0;
+}
+.present .fade-in {
+    opacity: 1.0;
+    transition: 3s;
+}
+.past .fade-out {
+    opacity: 0.0;
+    transition: 3s;
+}
+
+/*
     We start with a good ol' reset.
     That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
 
