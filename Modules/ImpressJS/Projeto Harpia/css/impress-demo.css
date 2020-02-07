@@ -54,11 +54,11 @@
 }
 .present .fade-in {
     opacity: 1.0;
-    transition: 3s;
+    transition: 10s;
 }
 .past .fade-out {
     opacity: 0.0;
-    transition: 3s;
+    transition: 10s;
 }
 
 /*
