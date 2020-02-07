@@ -14,6 +14,6 @@
   "author": "Tarso Queiroz",
   "license": "MIT",
   "dependencies": {
-    "mongoose": "^4.11.1"
+    "mongoose": "^5.8.11"
   }
 }
