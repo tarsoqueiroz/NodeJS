@@ -1,0 +1,28 @@
+{
+  "name": "knex2sqlite",
+  "version": "1.0.0",
+  "description": "Simple rest API with sqlite managed by knex",
+  "source": "https://danielfgray.gitlab.io/computers/rest-js/",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w '*.js' -x node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "REST",
+    "Knex",
+    "SQLite",
+    "NodeJS"
+  ],
+  "author": "Tarso Queiroz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.20.9",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
