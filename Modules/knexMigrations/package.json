@@ -1,0 +1,24 @@
+{
+  "name": "knexmigrations",
+  "version": "1.0.0",
+  "description": "Test and uses of migration on Knex",
+  "main": "index.js",
+  "sources": [
+    "https://www.logisticinfotech.com/blog/use-of-knex-js-as-node-js-database-migration-tool/",
+    "https://danielfgray.gitlab.io/computers/rest-js/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Knex",
+    "Migrations"
+  ],
+  "author": "Tarso Queiroz <tarsoqueiroz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "knex": "^0.20.9",
+    "sqlite3": "^4.1.1"
+  }
+}
