@@ -12,14 +12,3 @@ const schema = knex.schema.createSchemaIfNotExists('movies', table => {
   table.string('title')
   table.integer('released')
 })
-
-const create = (title, released) => 
-  knex('movies').insert({ title, released })
-
-const list = () =>
-  knex('movies').select('*')
-
-module.exports = {
-  create,
-  list
-}
