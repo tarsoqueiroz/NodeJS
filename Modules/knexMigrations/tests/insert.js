@@ -1,3 +1,4 @@
+
 const db = require('../config/db')
 
 const userAdmin   =   { id: 1000, name: 'Administrator', email: 'admin@domain.com',     pass: 'changeit' }
