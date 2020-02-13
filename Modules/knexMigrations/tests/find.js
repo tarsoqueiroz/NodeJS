@@ -1,6 +1,7 @@
 
 const db = require('../config/db')
 
+
 // db('users')
 //   .then(res => console.log(res))
 // db('profiles')
@@ -36,9 +37,13 @@ const db = require('../config/db')
 //   .first()
 //   .then(res  => console.log(res))
 
-db('profiles')
+//db('profiles')
 //  .where('id', '=', 666)
 //  .where('name', 'like', '%an%')
 //  .whereNot({ id: 666 })
-  .whereIn('id', [0, 1000] )
-  .then(res  => console.log(res))
+// .whereIn('id', [0, 1000] )
+// .then(res  => console.log(res))
+
+db('users')
+  .where('id', '=', 1)
+  .then(res => console.log(res))
