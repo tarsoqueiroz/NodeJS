@@ -49,3 +49,8 @@ package-lock.json
 
 # vsCode
 .vscode
+
+# From Svelte.JS
+.DS_Store
+public/bundle.*
+
