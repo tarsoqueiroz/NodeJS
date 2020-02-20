@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../App.svelte",
+    "../CourseGoal.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n  import CourseGoal from \"./CourseGoal.svelte\"\n\n  let courseGoal = \"\"\n\n//  $: console.log(courseGoal)\n  $: shouldHighLight = courseGoal.includes('!')\n  \n</script>\n\n<style>\n  .highlight {\n    color: red;\n  }\n</style>\n\n<h1>Assignment</h1>\n\n<p>Solve these tasks.</p>\n\n<ol>\n  <li>Add an input field that allows users to enter a course goal.</li>\n  <li>Output the user input in a h1 tag.</li>\n  <li>\n    Color the output red (e.g. by adding a class) if it contains at least one exclamation mark.\n  </li>\n  <li>\n    Put the h1 tag + output into a separate component to which you pass the user input\n  </li>\n</ol>\n\n<input type=\"text\" bind:value={courseGoal}>\n\n<!-- <h1 class:highlight={courseGoal.includes('!')} >{courseGoal}</h1> -->\n<h1 class:highlight={shouldHighLight} >{courseGoal}</h1>",
+    "<script>\n  export let goal\n\n  $: doHighLight = goal.includes('!')\n</script>\n\n<style>\n  .highlight {\n    color: red;\n  }\n</style>\n\n<h1 class:highlight={doHighLight} >{goal}</h1>"
+  ],
+  "names": [],
+  "mappings": "AAWE,UAAU,aAAC,CAAC,AACV,KAAK,CAAE,GAAG,AACZ,CAAC;ACND,UAAU,aAAC,CAAC,AACV,KAAK,CAAE,GAAG,AACZ,CAAC"
+}
