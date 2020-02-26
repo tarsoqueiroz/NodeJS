@@ -1,0 +1,24 @@
+{
+  "name": "axioshttp",
+  "version": "1.0.0",
+  "description": "Test with AXIOS HTTP request client",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "HTTP",
+    "request",
+    "AXIOS"
+  ],
+  "author": "Tarso Queiroz <tarsoqueiroz@gmail.com>",
+  "license": "MIT",
+  "source": "https://blog.bearer.sh/top-node-request-libraries/",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "got": "^10.6.0",
+    "node-fetch": "^2.6.0",
+    "superagent": "^5.2.2"
+  }
+}
