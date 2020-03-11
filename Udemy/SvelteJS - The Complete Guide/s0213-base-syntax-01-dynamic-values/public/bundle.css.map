@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../App.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n\tlet name = 'Max'\n\tlet age = 30\n\n\t// let uppercaseName; not required!\n\n\t$: uppercaseName = name.toUpperCase()\n\n\t$: console.log(name)\n\n\t$: console.log(age)\n\n\t$: if (name === 'Maximilian') {\n\t\tconsole.log('It runs!');\n\t\tage = 31;\n\t}\n\n\tfunction incrementAge() {\n\t\tage += 1;\n\t}\n\n\tfunction changeName() {\n\t\tif (name === 'Max') {\n\t\t\tname = 'Maximilian'\n\t\t} else {\n\t\t\tname = 'Max'\n\t\t}\n\t}\n</script>\n\n<style>\n\th1 {\n\t\tcolor: purple;\n\t}\n</style>\n\n<h1>Hello {uppercaseName} (aka {name}), my age is {age}!</h1>\n<button on:click=\"{incrementAge}\">Change Age</button>\n<button on:click=\"{changeName}\">Change Name</button>\n"
+  ],
+  "names": [],
+  "mappings": "AA+BC,EAAE,cAAC,CAAC,AACH,KAAK,CAAE,MAAM,AACd,CAAC"
+}
