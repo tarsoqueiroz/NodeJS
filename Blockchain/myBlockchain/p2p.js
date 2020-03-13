@@ -15,7 +15,7 @@ const config = defaults({
   id: myPeerId
 })
 
-const swarm = Swarm(config)
+const swarm = Swarm(config);
 
 (async () => {
   const port = await getPort()
@@ -27,7 +27,9 @@ const swarm = Swarm(config)
   swarm.on('connection', (conn, info) => {
     const seq = connSeq
     const peerId = info.id.toString('hex')
-    console.log(`Connected #${seq} to peer ${peerId}`)
+//    console.log(`Connected #${seq} to peer ${peerId}`)
+    console.log(`myPeerId     : ${myPeerId.toString('hex')}`)
+    console.log(`othersPeerIds: ${Object.keys(peers)}`)
 
     if (info.initiator) {
       try {
@@ -48,7 +50,7 @@ const swarm = Swarm(config)
     })
 
     conn.on('close', () => {
-      console.log(`Connection ${seq} closed, peerId: ${peerId}`)
+//      console.log(`Connection ${seq} closed, peerId: ${peerId}`)
       if (peers[peerId].seq === seq) {
         delete peers[peerId]
       }
@@ -60,39 +62,39 @@ const swarm = Swarm(config)
     peers[peerId].conn = conn
     peers[peerId].seq  = seq
     connSeq++
-  })()
+  })
+})()
 
-  setTimeout(() => {
-    writeMessageToPeers('hello', null)
-  }, 1000)
 
-  writeMessageToPeers = (type, data) => {
-    for (let id in peers) {
-      console.log('--- writeMessageToPeers start ---')
+setTimeout(() => {
+  writeMessageToPeers('hello', null)
+}, 10000)
+
+writeMessageToPeers = (type, data) => {
+  for (let id in peers) {
+    console.log('--- writeMessageToPeers start ---')
+    console.log(`  type: ${type}, to: ${id}`)
+    console.log('--- writeMessageToPeers start ---')
+    sendMessage(id, type, data)
+  }
+}
+
+writeMessageToPeerToId = (toId, type, data) => {
+  for (let id in peers) {
+    if (id === toId) {
+      console.log('--- writeMessageToPeerToId start ---')
       console.log(`  type: ${type}, to: ${id}`)
-      console.log('--- writeMessageToPeers start ---')
-      sendMessage(id, type, data)
+      console.log('--- writeMessageToPeerToId start ---')
+      sendMessage(id, type, data) 
     }
   }
+}
 
-  writeMessageToPeerToId = (toId, type, data) => {
-    for (let id in peers) {
-      if (id === toId) {
-        console.log('--- writeMessageToPeerToId start ---')
-        console.log(`  type: ${type}, to: ${id}`)
-        console.log('--- writeMessageToPeerToId start ---')
-        sendMessage(id, type, data) 
-      }
-    }
-  }
-
-  sendMessage = (id, type, data) => {
-    peers[id].conn.write(JSON.stringify({
-      to: id,
-      from: myPeerId,
-      type: type,
-      data: data
-    }))
-  }
-
-})
+sendMessage = (id, type, data) => {
+  peers[id].conn.write(JSON.stringify({
+    to: id,
+    from: myPeerId,
+    type: type,
+    data: data
+  }))
+}
