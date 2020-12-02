@@ -1,0 +1,24 @@
+{
+  "name": "prettygoodprivacy",
+  "version": "1.0.0",
+  "description": "PGP tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "PGP",
+    "Crypto",
+    "Security",
+    "Node"
+  ],
+  "author": "Tarso Queiroz <tarsoqueiroz@gmail.com>",
+  "license": "MIT",
+  "reference": [
+    "https://www.loginradius.com/blog/async/using-pgp-encryption-with-nodejs/",
+    ""
+  ],
+  "dependencies": {
+    "openpgp": "^4.10.8"
+  }
+}
